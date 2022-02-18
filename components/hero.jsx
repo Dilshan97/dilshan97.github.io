@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import styles from '../styles/hero.module.css'
 
 export default function Hero() {
@@ -7,7 +6,7 @@ export default function Hero() {
             <div className={styles.hero}>
                 <div className={styles.container}>
                     <header className={styles.header}>
-                        <Image
+                        <img
                             className={styles.hero_img}
                             src={"/dilshan.jpg"}
                             alt="Dilshan Ramesh"
