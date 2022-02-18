@@ -1,6 +1,6 @@
 html,
 body {
-  background-color: rgb(238, 255, 69) !important;
+  /* background-color: rgb(238, 255, 69) !important; */
   color: #000!important;
   margin: 0px;
   padding: 0px;
@@ -10,3 +10,9 @@ body {
 }
 
 
+
+.menu_icon{
+  justify-content: right;
+  display: flex;
+  margin: 25px 25px 0px;
+}

@@ -1,12 +1,19 @@
+import Footer from '../components/footer'
 import Hero from '../components/hero'
 import Layout from '../components/layout'
+import Menu from '../components/menu'
 import Social from '../components/social'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
     <div>
-      <Hero/>
+
+      {/* <Menu /> */}
+
+      <Hero />
+
+      {/* <Footer /> */}
     </div>
   )
 }

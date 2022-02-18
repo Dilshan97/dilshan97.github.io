@@ -1,0 +1,26 @@
+
+.container {
+    box-sizing: border-box;
+    padding: 64px 20%;
+}
+
+.main_title {
+    text-align: left;
+    font-size: 90px;
+}
+
+.conatact_mail {
+    font-size: 60px;
+}
+
+.conatact_mail a{
+    text-decoration: none;
+    color: #000;
+}
+
+.footer_img{
+    position: absolute;
+    width: 300px;
+    right: 0px;
+    opacity: 0.9;
+}

@@ -27,11 +27,10 @@ export default function Hero() {
 
                         <div>
                             <ul className={styles.social}>
-                                <li><a href="">Github</a></li>
-                                <li><a href="">Facebook</a></li>
-                                <li><a href="">Instagram</a></li>
-                                <li><a href="">Twitter</a></li>
-                                {/* <li><a href="">Linkedin</a></li> */}
+                                <li><a href="https://github.com/Dilshan97" target="_blank">Github</a></li>
+                                <li><a href="https://www.facebook.com/dilshan.ramesh.75/" target="_blank">Facebook</a></li>
+                                <li><a href="https://www.instagram.com/dilshan_ramesh/" target="_blank">Instagram</a></li>
+                                <li><a href="https://twitter.com/dilshanramesh81" target="_blank">Twitter</a></li>
                             </ul>
                         </div>
                     </header>
