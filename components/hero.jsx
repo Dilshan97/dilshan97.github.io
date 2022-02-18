@@ -24,6 +24,16 @@ export default function Hero() {
                         <p className={styles.sub_title}>
                             I'm an <strong>Open Source Contributor, Freelancer, Innovator & Tech enthusiast</strong>.
                         </p>
+
+                        <div>
+                            <ul className={styles.social}>
+                                <li><a href="">Github</a></li>
+                                <li><a href="">Facebook</a></li>
+                                <li><a href="">Instagram</a></li>
+                                <li><a href="">Twitter</a></li>
+                                {/* <li><a href="">Linkedin</a></li> */}
+                            </ul>
+                        </div>
                     </header>
                 </div>
             </div>
