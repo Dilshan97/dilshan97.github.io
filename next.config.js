@@ -1,7 +1,7 @@
 
 module.exports = {
-  basePath: '/',
-  assetPrefix: '/',
+  basePath: '',
+  assetPrefix: '',
 	images: {
     domains: ['dilshan97.github.io'],
   },
