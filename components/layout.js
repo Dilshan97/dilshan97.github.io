@@ -19,6 +19,7 @@ export default function Layout({ children }) {
                         'https://twitter.com/dilshanramesh81',
                         'https://www.youtube.com/c/DilshanRamesh',
                         'https://medium.com/@dilshanramesh81',
+                        'https://github.com/Dilshan97',
                         'https://www.linkedin.com/in/dilshan-ramesh'
                     ]}
                 />
