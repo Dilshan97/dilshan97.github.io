@@ -1,7 +1,7 @@
 
 .hero {
     height: 100%;
-    background-image: url('https://vihanga.dev/static/media/v-sign.581e685d.svg');
+    background-image: url('../public/bg.svg');
     background-repeat: no-repeat;
     background-attachment: initial;
     background-origin: initial;

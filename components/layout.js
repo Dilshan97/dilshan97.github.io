@@ -29,16 +29,17 @@ export default function Layout({ children }) {
                 />
             </Head>
 
-            {colorTheme === "light" ? (
+            {colorTheme === "dark" ? (
                 <div className="menu">
-                    <div className='menu_icon' onClick={() => setTheme("light")}>
-                    <img src="https://img.icons8.com/pastel-glyph/35/000000/light--v1.png"/>
+                    <div className="menu_icon" onClick={() => setTheme("dark")}>
+                        <img src={"/dark.png"} alt="Dark Theme" />
                     </div>
                 </div>
             ) : (
                 <div className="menu">
-                    <div className='menu_icon' onClick={() => setTheme("dark")}>
-                    <img src="https://img.icons8.com/external-justicon-flat-justicon/35/000000/external-moon-weather-justicon-flat-justicon-1.png"/>                    </div>
+                    <div className="menu_icon" onClick={() => setTheme("light")}>
+                        <img src={"/light.png"} alt="Light Theme"/>
+                    </div>
                 </div>
             )}
 
