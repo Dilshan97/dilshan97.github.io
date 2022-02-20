@@ -1,14 +1,18 @@
 import Head from 'next/head'
 import { SocialProfileJsonLd } from 'next-seo';
+import useDarkMode from "./darkmode";
 
 export default function Layout({ children }) {
+
+    const [colorTheme, setTheme] = useDarkMode();
+
     return (
         <>
             <Head>
                 <title>Dilshan Ramesh</title>
                 <link rel="icon" href="/favicon.ico" />
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-                <meta property="og:title" content="My page title" key="title" />
+                <meta property="og:title" content="Dilshan Ramesh" key="title" />
                 <SocialProfileJsonLd
                     type="Person"
                     name="Dilshan Ramesh"
@@ -24,6 +28,21 @@ export default function Layout({ children }) {
                     ]}
                 />
             </Head>
+
+            {colorTheme === "dark" ? (
+                <div className="menu">
+                    <div className="menu_icon" onClick={() => setTheme("dark")}>
+                        <img src={"/dark.png"} alt="Dark Theme" />
+                    </div>
+                </div>
+            ) : (
+                <div className="menu">
+                    <div className="menu_icon" onClick={() => setTheme("light")}>
+                        <img src={"/light.png"} alt="Light Theme"/>
+                    </div>
+                </div>
+            )}
+
             <main>{children}</main>
         </>
     )
