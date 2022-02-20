@@ -1,7 +1,11 @@
 import Head from 'next/head'
 import { SocialProfileJsonLd } from 'next-seo';
+import useDarkMode from "./darkmode";
 
 export default function Layout({ children }) {
+
+    const [colorTheme, setTheme] = useDarkMode();
+
     return (
         <>
             <Head>
@@ -24,6 +28,20 @@ export default function Layout({ children }) {
                     ]}
                 />
             </Head>
+
+            {colorTheme === "light" ? (
+                <div className="menu">
+                    <div className='menu_icon' onClick={() => setTheme("light")}>
+                    <img src="https://img.icons8.com/pastel-glyph/35/000000/light--v1.png"/>
+                    </div>
+                </div>
+            ) : (
+                <div className="menu">
+                    <div className='menu_icon' onClick={() => setTheme("dark")}>
+                    <img src="https://img.icons8.com/external-justicon-flat-justicon/35/000000/external-moon-weather-justicon-flat-justicon-1.png"/>                    </div>
+                </div>
+            )}
+
             <main>{children}</main>
         </>
     )
