@@ -13,6 +13,9 @@ export default function Layout({ children }) {
                 <link rel="icon" href="/favicon.ico" />
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 <meta property="og:title" content="Dilshan Ramesh" key="title" />
+                <meta name="title" content="Dilshan Ramesh | Official website" />
+                <meta name="description" content="I'm a Software Engineer | Full Stack Developer | Innovator | Entrepreneur | Undergraduate | Student. This is the place where I opensource stuff and break things" />
+
                 <SocialProfileJsonLd
                     type="Person"
                     name="Dilshan Ramesh"
