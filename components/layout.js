@@ -32,7 +32,7 @@ export default function Layout({ children }) {
                 />
             </Head>
 
-            {colorTheme === "dark" ? (
+            {/* {colorTheme === "dark" ? (
                 <div className="menu">
                     <div className="menu_icon" onClick={() => setTheme("dark")}>
                         <img src={"/dark.png"} alt="Dark Theme" />
@@ -44,7 +44,7 @@ export default function Layout({ children }) {
                         <img src={"/light.png"} alt="Light Theme"/>
                     </div>
                 </div>
-            )}
+            )} */}
 
             <main>{children}</main>
         </>

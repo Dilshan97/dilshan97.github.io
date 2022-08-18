@@ -8,21 +8,21 @@ export default function Hero() {
                     <header className={styles.header}>
                         <img
                             className={styles.hero_img}
-                            src={"/dilshan.jpg"}
+                            src="img/hero.webp"
                             alt="Dilshan Ramesh"
                             width={190}
                             height={180}
                         />
                         <h3 className={styles.how_im_i}>
-                            Hey, I'm Dilshan Ramesh
+                            Hey, I'm Dilshan 🤟
                         </h3>
 
                         <h1 className={styles.main_title}>
-                            I develop interactive <span className={styles.hero_highlight}>web & mobile apps</span>
+                            <span className={styles.hero_highlight}>Building</span> digital interactive web apps and mobile apps.
                         </h1>
 
                         <p className={styles.sub_title}>
-                            I'm an <strong>Open Source Contributor, Freelancer, Innovator & Tech enthusiast</strong>.
+                            A <strong>Software Engineer</strong> and <strong>Innovator</strong> in 🇱🇰. I specialize in Fullstack Web Development, Mobile Application Development, and SEO.
                         </p>
 
                         <div>
