@@ -8,7 +8,7 @@ export default function Hero() {
                     <header className={styles.header}>
                         <img
                             className={styles.hero_img}
-                            src="img/hero.webp"
+                            src={`https://github.com/dilshan97.png`}
                             alt="Dilshan Ramesh"
                             width={190}
                             height={180}
