@@ -3,6 +3,7 @@
  *   All rights reserved.
  *   Nova Solutions (Pvt) Ltd. All rights reserved.
  */
+import Image from 'next/image';
 import React, { FC } from 'react';
 import { ArrowRight2, Verify } from 'iconsax-react';
 
@@ -10,11 +11,17 @@ const Hero: FC = () => {
     return (
         <div className="hero my-12">
             <div className="container mx-auto flex flex-col justify-center items-center">
-                <img src="https://github.com/dilshan97.png" className="w-1/5 rounded-full" alt="dilshan97" />
+                <Image
+                    src="https://github.com/dilshan97.png"
+                    alt="dilshan97"
+                    className="w-1/5 rounded-full"
+                    width={100}
+                    height={100}
+                />
                 <div className="text-center">
                     <h3 className="text-3xl py-8 flex items-center justify-center">
                         Hey, I'm Dilshan
-                        <Verify size="22" variant="Bold" className="text-blue-600" />
+                        <Verify size="22" variant="Bold" className="text-blue-600 ml-2" />
                     </h3>
 
                     <h1 className="text-7xl font-extrabold">

@@ -11,22 +11,22 @@ const Header: FC = () => {
     <div className="nav h-full py-4 sticky top-0 border-b-2 border-gary-900">
       <div className="container max-w-4xl flex justify-between mx-auto sm:px-10">
         <div className="brand">
-          Dilshan Ramesh
+          <a href="/"> Dilshan Ramesh</a>
         </div>
 
         <nav>
           <ul className="flex">
 
             <li className="px-8">
-              <a href="#projects">Projects</a>
+              <a href="/projects">Projects</a>
             </li>
 
             <li className="px-8">
-              <a href="#">Process</a>
+              <a href="/about">About</a>
             </li>
 
             <li className="px-8">
-              <a href="#faqs">FAQ</a>
+              <a href="/faq">FAQ</a>
             </li>
 
             <li className="px-8">

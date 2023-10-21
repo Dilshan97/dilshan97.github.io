@@ -3,7 +3,8 @@
  *   All rights reserved.
  *   Nova Solutions (Pvt) Ltd. All rights reserved.
  */
-import React, { FC } from 'react'
+import React, { FC } from 'react';
+import { ArrowRight2 } from 'iconsax-react';
 
 const Cta: FC = () => {
     return (
@@ -14,7 +15,7 @@ const Cta: FC = () => {
                 </h2>
                 <a href="#" className="text-xl flex items-center justify-center text-blue-600">
                     Start a project request
-                    <i className="isax isax-arrow-right-3 mx-1"></i>
+                    <ArrowRight2 className="mx-1" size={16} />
                 </a>
             </div>
         </div>
