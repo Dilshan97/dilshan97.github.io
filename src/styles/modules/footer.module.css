@@ -1,9 +1,24 @@
 /*
  *   Copyright (c) 2023 Dilshan Ramesh
  *   All rights reserved.
- *   Nova Solutions (Pvt) Ltd. All rights reserved.
  */
-@media only screen and (max-width: 600px) {
+/*----Small devices (landscape phones, 576px and up)----*/
+@media all and (max-width: 576px) {
+    .footer .credit {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .footer .credit ul {
+        justify-content: center;
+        padding: 5px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*----Medium devices (tablets, 768px and up)----*/
+@media all and (max-width: 768px) {
     .footer .credit {
         flex-direction: column-reverse;
         text-align: center;

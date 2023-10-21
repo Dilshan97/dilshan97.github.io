@@ -1,13 +1,12 @@
 /*
  *   Copyright (c) 2023 Dilshan Ramesh
  *   All rights reserved.
- *   Nova Solutions (Pvt) Ltd. All rights reserved.
  */
 import React, { FC } from 'react'
 
 const Specify: FC = () => {
     return (
-        <div className="specification bg-slate-100 padding-140">
+        <div className="specification bg-slate-100 ">
             <div className="container mx-auto">
                 <div className="mx-20">
                     <p className="text-4xl py-4 text-gray-600">Benefits</p>

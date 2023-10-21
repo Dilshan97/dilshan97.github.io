@@ -3,6 +3,11 @@
  *   All rights reserved.
  *   Nova Solutions (Pvt) Ltd. All rights reserved.
  */
+.tech-stack {
+    padding: 7rem 0rem;
+}
+
+
  @media only screen and (max-width: 600px) {
     .tech-stack title {
         margin: 0px;
