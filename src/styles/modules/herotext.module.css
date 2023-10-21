@@ -1,0 +1,21 @@
+/*
+ *   Copyright (c) 2023 Dilshan Ramesh
+ *   All rights reserved.
+ *   Nova Solutions (Pvt) Ltd. All rights reserved.
+ */
+.hero-text h1 {
+    -webkit-text-fill-color: transparent;
+    animation: intro-gradient 10s infinite both;
+}
+
+@media only screen and (max-width: 600px) {
+    .hero-text {
+        display: none;
+    }
+
+    .hero-text h1 {
+        font-size: 3.5rem;
+        text-align: center;
+        padding: 0px 30px;
+    }
+}

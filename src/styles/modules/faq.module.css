@@ -1,0 +1,26 @@
+/*
+ *   Copyright (c) 2023 Dilshan Ramesh
+ *   All rights reserved.
+ *   Nova Solutions (Pvt) Ltd. All rights reserved.
+ */
+
+
+@media only screen and (max-width: 600px) {
+    .faqs {
+        padding: 120px 0px;
+    }
+
+    .faqs h2 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+
+    .faqs .grid {
+        grid-template-rows: repeat(6, minmax(0, 1fr));
+    }
+
+    .faqs .grid .faq-item {
+        margin: 0px 10px;
+        padding: 2rem;
+    }
+}

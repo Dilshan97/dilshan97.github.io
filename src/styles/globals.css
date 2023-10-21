@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+    }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.gradient-heading {
+    animation: intro-gradient 10s ease infinite both;
+    background: linear-gradient(91.36deg, #eca658, #f391a6 13.02%, #e188c3 25.52%, #a58de3 37.5%, #56abec 49.48%, #737eb7 63.02%, #c8638c 72.92%, #dd5d57 84.38%, #df6c51 97.92%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 200% 200%;
+}
+
+.divider {
+    background-color: hsla(0, 0%, 53%, .2);
+    height: 1px;
+    width: 100%;
+}
+
+@keyframes intro-gradient {
+    0% {
+        background-position: 0 4%;
+    }
+
+    50% {
+        background-position: 100% 97%;
+    }
+
+    100% {
+        background-position: 0 4%;
+    }
+}
+
+.default-padding {
+    padding: 180px 0px;
+}
+
+.padding-120 {
+    padding: 120px 0px;
+}
+
+.padding-130 {
+    padding: 130px 0px;
+}
+
+.padding-140 {
+    padding: 140px;
+}
+
+@import '@/styles/modules/nav.module.css';
+@import '@/styles/modules/footer.module.css';
+@import '@/styles/modules/hero.module.css';
+@import '@/styles/modules/herotext.module.css';
+@import '@/styles/modules/cta.module.css';
+@import '@/styles/modules/faq.module.css';
+@import '@/styles/modules/tech-stack.module.css';
+@import '@/styles/modules/projects.module.css';
