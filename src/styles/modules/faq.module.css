@@ -1,11 +1,14 @@
 /*
  *   Copyright (c) 2023 Dilshan Ramesh
  *   All rights reserved.
- *   Nova Solutions (Pvt) Ltd. All rights reserved.
  */
 
+.faqs {
+    padding: 80px 0px;
+}  
 
-@media only screen and (max-width: 600px) {
+/*----Small devices (landscape phones, 576px and up)----*/
+@media all and (max-width: 576px){
     .faqs {
         padding: 120px 0px;
     }
@@ -20,7 +23,28 @@
     }
 
     .faqs .grid .faq-item {
-        margin: 0px 10px;
+        margin: 0px 12px;
+        padding: 2rem;
+    }
+}
+/*----Medium devices (tablets, 768px and up)----*/
+@media all and (max-width: 768px) {
+    .faqs {
+        padding: 120px 0px;
+    }
+
+    .faqs h2 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+
+    .faqs .grid {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .faqs .grid .faq-item {
+        margin: 0px 12px;
         padding: 2rem;
     }
 }
