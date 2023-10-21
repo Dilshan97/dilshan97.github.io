@@ -1,10 +1,13 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
-import Header from '@/components/header'
-import Footer from '@/components/footer'
+import type { Metadata } from 'next';
+import { Poppins } from 'next/font/google';
+import Header from '@/components/header';
+import Footer from '@/components/footer';
+import '@/styles/globals.css';
 
-const inter = Inter({ subsets: ['latin'] })
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['200', '300', '400', '500', '600']
+});
 
 export const metadata: Metadata = {
   title: 'Dilshan Ramesh',
@@ -18,10 +21,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={poppins.className}>
         <Header />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   )

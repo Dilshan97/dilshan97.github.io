@@ -3,11 +3,14 @@
  *   All rights reserved.
  *   Nova Solutions (Pvt) Ltd. All rights reserved.
  */
+import Hero from '@/components/hero'
 import React, { FC } from 'react'
 
 const Home: FC = () => {
   return (
-    <div>Home</div>
+    <>
+      <Hero/>
+    </>
   )
 }
 

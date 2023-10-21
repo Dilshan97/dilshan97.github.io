@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+@import '@/styles/hero.module.css';
+
+/*-------------------nav-------------------------*/
+.nav {
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  background-color: hsla(0, 0%, 100%, .7);
+}
+
+/*---------------responsive---------------------*/
+@media only screen and (max-width: 600px) {
+
+  /*-------nav------*/
+  .nav .container{
+      padding: 0px 20px;
+  }
+
+  .nav nav{
+      display: none;
+  }
+
+  /*--------hero-------*/
+  .hero img{
+      width: 60%;
+  }
+
+  .hero h1 {
+      font-size: 3rem;
+      line-height: 1.2;
+  }
+
+  .hero p {
+      text-wrap: wrap;
+      font-size: 1.2rem;
+      text-overflow: ellipsis;
+  }
+
+  /*--------hero-text-------*/
+  .hero-text {
+      display: none;
+  }
+
+  .hero-text h1{
+      font-size: 3.5rem;
+      text-align: center;
+      padding: 0px 30px;
+  }
+
+  /*------intro-------*/
+  .intro {
+      background-color: #fff;
+      padding: 140px 0px;
+  }
+  .intro h2{
+      font-size: 2.3rem;
+      padding: 0px 10px;
+  }
+
+  /*-------tech stack--------*/
+  .tech-stack title{
+      margin: 0px;
+      background-color: #56abec !important;
+  }
+
+  .tech-stack h2 {
+      font-size: 2rem;
+  }
+
+  /*---------faqs-----------*/
+  .faqs {
+      padding: 120px 0px;
+  }
+
+  .faqs h2{
+      font-size: 2.5rem;
+      line-height: 1.2;
+  }
+
+  .faqs .grid {
+      grid-template-rows: repeat(6, minmax(0, 1fr));
+  }
+
+  .faqs .grid .faq-item {
+      margin: 0px 10px;
+      padding: 2rem;
+  }
+
+  /*----footer---*/
+  .footer .credit {
+      flex-direction: column-reverse;
+      text-align: center;
+  }
+
+  .footer .credit ul {
+      justify-content: center;
+      padding: 5px 0px;
+      display: flex;
+      flex-direction: column;
+  }
+}
