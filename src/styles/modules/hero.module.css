@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'dev-dilshan-bold';
-    src: url('../styles/fonts/Wotfard-Bold.ttf') format('truetype');
+    src: url('../../styles/fonts/Wotfard-Bold.ttf') format('truetype');
 }
 
 .hero h1 {
@@ -18,4 +18,21 @@
 .hero .highlight {
     background-image: url('https://dilshan97.github.io/_next/static/media/text-highlight.3f9b972e.png') !important;
     background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 600px) {
+    .hero img {
+        width: 60%;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        text-wrap: wrap;
+        font-size: 1.2rem;
+        text-overflow: ellipsis;
+    }
 }

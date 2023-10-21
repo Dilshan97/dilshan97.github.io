@@ -1,0 +1,20 @@
+/*
+ *   Copyright (c) 2023 Dilshan Ramesh
+ *   All rights reserved.
+ *   Nova Solutions (Pvt) Ltd. All rights reserved.
+ */
+.nav {
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    background-color: hsla(0, 0%, 100%, .7);
+}
+
+@media only screen and (max-width: 600px) {
+    .nav .container {
+        padding: 0px 20px;
+    }
+
+    .nav nav {
+        display: none;
+    }
+}

@@ -1,0 +1,15 @@
+/*
+ *   Copyright (c) 2023 Dilshan Ramesh
+ *   All rights reserved.
+ *   Nova Solutions (Pvt) Ltd. All rights reserved.
+ */
+ @media only screen and (max-width: 600px) {
+    .tech-stack title {
+        margin: 0px;
+        background-color: #56abec !important;
+    }
+
+    .tech-stack h2 {
+        font-size: 2rem;
+    }    
+}
