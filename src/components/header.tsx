@@ -5,10 +5,10 @@
  */
 import React, { FC } from 'react'
 
-const Home: FC = () => {
+const Header:FC= () => {
   return (
-    <div>Home</div>
+    <div>Header</div>
   )
 }
 
-export default Home
+export default Header
