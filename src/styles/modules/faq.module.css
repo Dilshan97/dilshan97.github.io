@@ -7,6 +7,13 @@
     padding: 80px 0px;
 }  
 
+/* .faqs .grid .faq-item:hover {
+    transform: rotateX(180deg);
+    transition-duration: 0.8s;
+    transition-property: transform;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+} */
+
 /*----Small devices (landscape phones, 576px and up)----*/
 @media all and (max-width: 576px){
     .faqs {

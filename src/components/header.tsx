@@ -3,10 +3,14 @@
  *   All rights reserved.
  *   Nova Solutions (Pvt) Ltd. All rights reserved.
  */
-import React, { FC } from 'react';
-import { ArrowRight2 } from 'iconsax-react';
+import React, { FC, useContext } from 'react';
+import { ArrowRight2, HambergerMenu } from 'iconsax-react';
+import { AppContext } from '@/context/appContext';
 
 const Header: FC = () => {
+
+  const { setMenuOpen } = useContext(AppContext);
+
   return (
     <div className="nav h-full py-4 sticky top-0 border-b-2 border-gary-900">
       <div className="container max-w-4xl flex justify-between mx-auto sm:px-10">
@@ -40,6 +44,14 @@ const Header: FC = () => {
           <a href="#" className="flex items-center text-blue-600">
             Project Request <ArrowRight2 className="mx-1" size={16} />
           </a>
+        </div>
+
+        <div className="mobile-menu">
+          <HambergerMenu
+            size="32"
+            className="cursor-pointer"
+            onClick={() => setMenuOpen(true)}
+          />
         </div>
       </div>
     </div>

@@ -40,6 +40,10 @@ const Hero: FC = () => {
                         Start a project request
                         <ArrowRight2 className="mx-1" size={16} />
                     </a>
+
+                    <div className="social-connect">
+                        
+                    </div>
                 </div>
             </div>
         </div>
