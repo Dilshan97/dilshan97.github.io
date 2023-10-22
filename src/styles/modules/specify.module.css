@@ -7,6 +7,27 @@
    padding: 5rem 0rem;
 }
 
+.specification .linear-gradient-1 {
+   background-image: linear-gradient(135deg, #63e3dc, #1254c2);
+}
+
+.specification .linear-gradient-2 {
+   background-image: linear-gradient(194deg, #5af141, #2a9dce);
+}
+
+.specification .linear-gradient-3 {
+   background-image: linear-gradient(225deg, #e374ff, #3d30ea);
+}
+
+.specification .linear-gradient-4 {
+   background-image: linear-gradient(135deg, #ffb077, #b82698);
+}
+
+.specification .item h3 {
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
 /*----Small devices (landscape phones, 576px and up)----*/
 @media all and (max-width: 576px) {
    .specification .heading {

@@ -29,20 +29,20 @@ const Specify: FC = () => {
 
                     <div className="sub-grid grid grid-rows-2 grid-flow-col gap-4">
                         <div className="item text-center bg-white rounded-3xl p-10">
-                            <h3 className="text-7xl">10<span className="text-2xl align-top">+</span></h3>
-                            <p>Happy clients</p>
+                            <h3 className="linear-gradient-1 text-7xl">10<span className="text-2xl align-top">+</span></h3>
+                            <p className="py-2">Happy clients</p>
                         </div>
                         <div className="item text-center bg-white rounded-3xl p-10">
-                            <h3 className="text-7xl">17<span className="text-2xl align-top">+</span></h3>
-                            <p>Ghost projects</p>
+                            <h3 className="linear-gradient-2 text-7xl">17<span className="text-2xl align-top">+</span></h3>
+                            <p className="py-2">Ghost projects</p>
                         </div>
                         <div className="item text-center bg-white rounded-3xl p-10">
-                            <h3 className="text-7xl">3<span className="text-2xl align-bottom">Years</span></h3>
-                            <p>Experience</p>
+                            <h3 className="linear-gradient-3 text-7xl">3<span className="text-2xl align-bottom">Years</span></h3>
+                            <p className="py-2">Experience</p>
                         </div>
                         <div className="item text-center bg-white rounded-3xl p-10">
-                            <h3 className="text-7xl">100<span className="text-2xl align-bottom">%</span></h3>
-                            <p>Passion</p>
+                            <h3 className="linear-gradient-4 text-7xl">100<span className="text-2xl align-bottom">%</span></h3>
+                            <p className="py-2">Passion</p>
                         </div>
                     </div>
                 </div>
