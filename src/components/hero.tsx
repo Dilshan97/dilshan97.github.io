@@ -11,13 +11,17 @@ const Hero: FC = () => {
     return (
         <div className="hero my-12">
             <div className="container mx-auto flex flex-col justify-center items-center">
-                <Image
-                    src="https://github.com/dilshan97.png"
-                    alt="dilshan97"
-                    className="w-1/5 rounded-full"
-                    width={500}
-                    height={500}
-                />
+                <>
+                    <div className="radial-blur"></div>
+                    <Image
+                        src="https://github.com/dilshan97.png"
+                        alt="dilshan97"
+                        className="w-1/5 rounded-full"
+                        width={500}
+                        height={500}
+                    />
+                </>
+
                 <div className="text-center">
                     <h3 className="text-3xl py-8 flex items-center justify-center">
                         Hey, I'm Dilshan
