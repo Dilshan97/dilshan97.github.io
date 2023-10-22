@@ -16,11 +16,11 @@ const Specify: FC = () => {
                     </h2>
                 </div>
 
-                <div className="main-grid grid grid-cols-2 gap-4 my-10">
+                <div className="main-grid grid grid-cols-2 gap-4 my-10 mx-20">
                     <div className="bg-white rounded-3xl p-10">
                         <h2 className="text-3xl font-medium">Ghost Theme developer at the intersection of design and code.</h2>
                         <br />
-                        <p className="leading-7">Hi! I am Thimira Madhusanka Thenuwara from Colombo, Sri Lanka. I turn your
+                        <p className="leading-7">Hey! I'm Dilshan Ramesh from Colombo, Sri Lanka. I turn your
                             designs into
                             pixel-perfect Ghost sites with great attention to detail and elegant animations. Say goodbye to
                             the stressful back and forth with developers who have no feel for design. Additionally, I offer

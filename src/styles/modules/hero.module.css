@@ -15,6 +15,19 @@
     color: #000;
 }
 
+/* .hero .radial-blur {
+    background: linear-gradient(180deg,#fa39ad 40%,#fe6c4c 50%);
+    border-radius: 50%;
+    -webkit-filter: blur(120px);
+    filter: blur(120px);
+    height: 60%;
+    left: 300px;
+    position: absolute;
+    top: 100px;
+    width: 40%;
+    z-index: -2;
+} */
+
 .hero .highlight {
     background-image: url('https://dilshan97.github.io/_next/static/media/text-highlight.3f9b972e.png') !important;
     background-repeat: no-repeat;

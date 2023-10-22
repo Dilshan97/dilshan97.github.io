@@ -2,16 +2,20 @@
  *   Copyright (c) 2023 Dilshan Ramesh
  *   All rights reserved.
  *   Nova Solutions (Pvt) Ltd. All rights reserved.
- */
+*/
+import React, { FC } from 'react';
+
+//components
 import Cta from '@/components/cta';
 import Specify from '@/components/specify';
 import TechStack from '@/components/techStack';
-import React, { FC } from 'react';
+import Experiences from '@/components/experiences/experiences';
 
 const Page:FC = () => {
   return (
     <>
       <Specify/>
+      <Experiences/>
       <TechStack/>
       <Cta/>
     </>
