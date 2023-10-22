@@ -2,7 +2,8 @@
  *   Copyright (c) 2023 Dilshan Ramesh
  *   All rights reserved.
  */
-import React, { FC } from 'react'
+import Image from 'next/image';
+import React, { FC } from 'react';
 
 const TechStack: FC = () => {
     return (
@@ -15,10 +16,31 @@ const TechStack: FC = () => {
                     </h2>
                 </div>
 
-                <div className="grid py-10 px-20">
-                    <img className="w-full"
-                        src="https://skillicons.dev/icons?i=git,aws,angular,arduino,aws,css,dart,figma,firebase,flutter,gatsby,github,githubactions,js,laravel,mysql,nextjs,php,postman,react,redux,tailwind,ts,androidstudio"
-                        alt="tech stack" />
+                <div className="grid grid-cols-8 grid-flow-row gap-4 py-10 px-20">
+                    <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=laravel" alt="Laravel" />
+                    <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=react" alt="React" />
+                    <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=flutter" alt="Flutter" />
+                    <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=ts" alt="TypeScript" />
+                    <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=js" alt="JavaScript" />
+                    <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=dart" alt="Dart" />
+                    <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=git" alt="Git" />
+                    <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=androidstudio" alt="Android Studio" />
+                    <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=redux" alt="Redux" />
+                    <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind" />
+                    <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=aws" alt="AWS" />
+                    <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=angular" alt="Angular" />
+                    <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=arduino" alt="Arduino" />
+                    <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=css" alt="CSS" />
+                    <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=figma" alt="Figma" />
+                    <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=firebase" alt="Firebase" />
+                    <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=gatsby" alt="Gatsby" />
+                    <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=github" alt="GitHub" />
+                    <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=githubactions" alt="Github Actions" />
+                    <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=mysql" alt="MySql" />
+                    <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=nextjs" alt="Next Js" />
+                    <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=php" alt="PHP" />
+                    <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=postman" alt="Postman" />
+                    <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind" />
                 </div>
             </div>
         </div>

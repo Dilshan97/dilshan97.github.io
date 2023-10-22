@@ -7,14 +7,29 @@
     padding: 7rem 0rem;
 }
 
-
- @media only screen and (max-width: 600px) {
-    .tech-stack title {
-        margin: 0px;
-        background-color: #56abec !important;
+/*----Small devices (landscape phones, 576px and up)----*/
+@media all and (max-width: 576px) {
+    .tech-stack .title {
+        margin: 0rem 2.5rem;
     }
 
-    .tech-stack h2 {
-        font-size: 2rem;
-    }    
+    .tech-stack .title p {
+        font-size: 1.3rem;
+        padding: 0.3rem 0rem;
+    }
+
+    .tech-stack .title h2 {
+        font-size: 1.6rem;
+    }
+
+    .tech-stack .grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        padding: 2rem 3rem;
+    }
+
+    .tech-stack .grid img {
+        width: 100%;
+    }
 }
+
+/*----Medium devices (tablets, 768px and up)----*/
