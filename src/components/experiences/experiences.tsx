@@ -9,12 +9,12 @@ import iLabLogo from 'public/images/ilabs-logo.jpeg';
 
 const Experiences: FC = () => {
     return (
-        <div className="education bg-red-50">
+        <div className="experiences bg-red-50">
             <div className="container mx-auto">
                 <div className="title mx-20">
                     <p className="text-4xl py-4 text-gray-600">Experiences</p>
                     <h2 className="text-7xl">
-                        Life's interactive lessons & adventures.
+                        Life's interactive adventures.
                     </h2>
                 </div>
 
