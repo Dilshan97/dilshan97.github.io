@@ -40,13 +40,13 @@ const Header: FC = () => {
           </ul>
         </nav>
 
-        <div className="project-request max-sm:hidden">
+        <div className="project-request max-sm:hidden max-md:hidden">
           <a href="#" className="flex items-center text-blue-600">
             Project Request <ArrowRight2 className="mx-1" size={16} />
           </a>
         </div>
 
-        <div className="mobile-menu flex items-center max-sm:block max-lg:hidden max-md:hidden max-xl:hidden max-2xl:hidden">
+        <div className="mobile-menu flex items-center max-sm:block max-lg:hidden max-md:block max-xl:hidden max-2xl:hidden">
           <HambergerMenu
             size="32"
             className="cursor-pointer"
