@@ -3,6 +3,47 @@
  *   All rights reserved.
  */
 
- .specification {
-    padding: 7.5rem 0rem;
- }
+.specification {
+   padding: 5rem 0rem;
+}
+
+/*----Small devices (landscape phones, 576px and up)----*/
+@media all and (max-width: 576px) {
+   .specification .heading {
+      margin: 2rem 2rem;
+   }
+
+   .specification .heading p {
+      font-size: 1.5rem;
+      padding: 0.2rem;
+   }
+
+   .specification .heading h2 {
+      font-size: 2rem;
+      line-height: 1.3;
+   }
+
+   .specification .main-grid {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      margin: 1rem;
+   }
+
+   .specification .sub-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+   }
+
+   .specification .sub-grid h3 {
+      font-size: 3rem;
+   }
+
+   .specification .sub-grid p {
+      font-size: 0.8rem;
+      padding: 0.5rem 0rem;
+   }
+
+   .specification .sub-grid .item {
+      padding: 1.5rem;
+      width: 100%;
+      text-align: center;
+   }
+}
