@@ -11,7 +11,7 @@ import React, { FC } from 'react';
 const Page:FC = () => {
   return (
     <>
-      {/* <Specify/> */}
+      <Specify/>
       <TechStack/>
       <Cta/>
     </>
