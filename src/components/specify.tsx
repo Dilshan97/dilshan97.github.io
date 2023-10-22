@@ -11,8 +11,7 @@ const Specify: FC = () => {
                 <div className="heading mx-20">
                     <p className="text-4xl py-4 text-gray-600">Benefits</p>
                     <h2 className="text-7xl">
-                        Your perfect <br />
-                        Flutter partner.
+                        Your perfect Flutter partner.
                     </h2>
                 </div>
 
