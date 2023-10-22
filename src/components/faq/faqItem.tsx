@@ -17,7 +17,7 @@ const FaqItem: FC<FaqItem> = ({ question, answer }) => {
     const [isVisible, setVisible] = useState<boolean>(false);
 
     return (
-        <div className="faq-item bg-white rounded-3xl p-12 flex justify-between border hover:border-blue-500">
+        <div className="faq-item bg-white rounded-3xl p-12 flex justify-between items-center border hover:border-blue-500">
             {!isVisible ? (
                 <>
                     <p>{question}</p>
