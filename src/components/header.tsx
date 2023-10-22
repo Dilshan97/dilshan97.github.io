@@ -13,7 +13,7 @@ const Header: FC = () => {
 
   return (
     <div className="nav h-full py-4 sticky top-0 border-b-2 border-gary-900">
-      <div className="container max-w-4xl flex justify-between mx-auto sm:px-10">
+      <div className="container max-w-4xl flex items-center justify-between mx-auto sm:px-10">
         <div className="brand">
           <a href="/"> Dilshan Ramesh</a>
         </div>
@@ -40,13 +40,13 @@ const Header: FC = () => {
           </ul>
         </nav>
 
-        <div className="project-request">
+        <div className="project-request max-sm:hidden">
           <a href="#" className="flex items-center text-blue-600">
             Project Request <ArrowRight2 className="mx-1" size={16} />
           </a>
         </div>
 
-        <div className="mobile-menu">
+        <div className="mobile-menu flex items-center max-sm:block max-lg:hidden max-md:hidden max-xl:hidden max-2xl:hidden">
           <HambergerMenu
             size="32"
             className="cursor-pointer"
