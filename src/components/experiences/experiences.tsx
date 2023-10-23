@@ -9,7 +9,7 @@ import iLabLogo from 'public/images/ilabs-logo.jpeg';
 
 const Experiences: FC = () => {
     return (
-        <div className="experiences bg-red-50">
+        <div className="experiences bg-gray-100">
             <div className="container mx-auto">
                 <div className="title mx-20">
                     <p className="text-4xl py-4 text-gray-600">Experiences</p>
@@ -23,8 +23,8 @@ const Experiences: FC = () => {
                         title={'Senior Software Engineer'}
                         company={'Nova Solutions (Pvt) Ltd'}
                         type={'Full-time'}
-                        duration={'Sep 2021 - Present'}
-                        skills={'E-Commerce · Agile Methodologies · Redux.js · flutter · React.js · Flutter · Next.js · PHP · Laravel · Angular'}
+                        duration={'Sep 2023 - Present'}
+                        skills={'E-Commerce · Agile Methodologies · Redux.js · React.js · Flutter'}
                         logo={novaLogo}
                     />
 
@@ -32,26 +32,26 @@ const Experiences: FC = () => {
                         title={'Software Engineer'}
                         company={'Nova Solutions (Pvt) Ltd'}
                         type={'Full-time'}
-                        duration={'Sep 2021 - Present'}
-                        skills={'E-Commerce · Agile Methodologies · Redux.js · flutter · React.js · Flutter · Next.js · PHP · Laravel · Angular'}
+                        duration={'Sep 2021 - Sep 2023'}
+                        skills={'E-Commerce · Agile Methodologies · Redux.js · React.js · Flutter · Next.js · PHP · Laravel · Angular'}
                         logo={novaLogo}
                     />
 
                     <Company
-                        title={'Software Engineer'}
+                        title={'Software Engineer - PHP'}
                         company={'iLabs'}
                         type={'Full-time'}
                         duration={'Mar 2021 - Sep 2021'}
-                        skills={'E-Commerce · Agile Methodologies · Redux.js · flutter · React.js · Flutter · Next.js · PHP · Laravel · Angular'}
+                        skills={'E-Commerce · Flutter · PHP · Laravel · Blade Template . Stripe Payment Gateway'}
                         logo={iLabLogo}
                     />
 
                     <Company
-                        title={'Trainer Software Engineer'}
+                        title={'Intern Software Engineer'}
                         company={'Nova Solutions (Pvt) Ltd'}
                         type={'Full-time'}
                         duration={'Aug 2019 - Feb 2020'}
-                        skills={'E-Commerce · Agile Methodologies · Redux.js · flutter · React.js · Flutter · Next.js · PHP · Laravel · Angular'}
+                        skills={'Firebase · VueJs · Android · Java'}
                         logo={novaLogo}
                     />
                 </div>

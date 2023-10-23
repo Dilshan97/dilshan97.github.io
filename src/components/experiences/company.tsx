@@ -15,7 +15,7 @@ interface Company {
 }
 const Company: FC<Company> = ({ title, company, type, duration, skills, logo }) => {
     return (
-        <div className="company flex justify-start items-center bg-white rounded-3xl p-5">
+        <div className="company flex justify-start items-center bg-white shadow-none rounded-3xl p-5">
             <Image
                 className="rounded-3xl"
                 src={logo}
