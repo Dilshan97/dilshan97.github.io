@@ -12,7 +12,7 @@ const Header: FC = () => {
   const { setMenuOpen } = useContext(AppContext);
 
   return (
-    <div className="nav h-full py-4 sticky top-0 border-b-2 border-gary-900">
+    <div className="nav h-full py-4 sticky top-0 border-b-2 border-gary-900 z-10">
       <div className="container max-w-4xl flex items-center justify-between mx-auto sm:px-10">
         <div className="brand">
           <a href="/"> Dilshan Ramesh</a>
@@ -46,7 +46,7 @@ const Header: FC = () => {
           </a>
         </div>
 
-        <div className="mobile-menu flex items-center max-sm:block max-lg:hidden max-md:block max-xl:hidden max-2xl:hidden">
+        <div className="mobile-menu flex items-center max-sm:block max-lg:hidden max-md:block max-xl:hidden max-2xl:hidden 2xl:hidden">
           <HambergerMenu
             size="32"
             className="cursor-pointer"
