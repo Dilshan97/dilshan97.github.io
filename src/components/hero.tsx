@@ -1,7 +1,6 @@
 /*
  *   Copyright (c) 2023 Dilshan Ramesh
  *   All rights reserved.
- *   Nova Solutions (Pvt) Ltd. All rights reserved.
  */
 import Image from 'next/image';
 import React, { FC } from 'react';
@@ -9,7 +8,7 @@ import { ArrowRight2, Verify } from 'iconsax-react';
 
 const Hero: FC = () => {
     return (
-        <div className="hero my-12">
+        <div className="hero my-12 h-screen">
             <div className="container mx-auto flex flex-col justify-center items-center">
                 <>
                     <div className="radial-blur"></div>
