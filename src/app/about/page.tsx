@@ -10,12 +10,14 @@ import Cta from '@/components/cta';
 import Specify from '@/components/specify';
 import TechStack from '@/components/techStack';
 import Experiences from '@/components/experiences/experiences';
+import Educations from '@/components/education/educations';
 
 const Page:FC = () => {
   return (
     <>
       <Specify/>
       <Experiences/>
+      <Educations/>
       <TechStack/>
       <Cta/>
     </>
