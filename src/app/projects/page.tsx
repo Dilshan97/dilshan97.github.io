@@ -3,7 +3,7 @@
  *   All rights reserved.
  *   Nova Solutions (Pvt) Ltd. All rights reserved.
  */
-import Projects from '@/components/projects';
+import Projects from '@/components/projects/projects';
 import React, { FC } from 'react';
 
 const Page:FC = () => {

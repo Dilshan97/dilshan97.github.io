@@ -7,7 +7,7 @@ import React, { FC } from 'react'
 
 const Projects: FC = () => {
     return (
-        <div className="projects bg-blue-100 padding-140" id="projects">
+        <div className="projects bg-blue-100">
             <div className="container mx-auto">
                 <div className="mx-20">
                     <p className="text-4xl py-4 text-gray-600">Projects</p>

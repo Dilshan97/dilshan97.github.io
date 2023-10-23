@@ -3,7 +3,7 @@
  *   All rights reserved.
  */
 "use client"
-import { FC, createContext, useState } from 'react';
+import React, { FC, createContext, useState } from 'react';
 
 export const AppContext = createContext({
     isMenuOpen: false,
