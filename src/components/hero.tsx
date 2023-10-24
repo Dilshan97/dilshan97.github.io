@@ -8,7 +8,7 @@ import { ArrowRight2, Verify } from 'iconsax-react';
 
 const Hero: FC = () => {
     return (
-        <div className="hero my-12 h-screen">
+        <div className="hero my-12 md:h-screen">
             <div className="container mx-auto flex flex-col justify-center items-center">
                 <>
                     <div className="radial-blur"></div>
