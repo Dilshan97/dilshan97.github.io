@@ -2,6 +2,7 @@
  *   Copyright (c) 2023 Dilshan Ramesh
  *   All rights reserved.
  */
+"use client"
 import FaqItem from '@/components/faq/faqItem';
 import React, { FC } from 'react';
 

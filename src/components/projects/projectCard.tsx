@@ -2,6 +2,7 @@
  *   Copyright (c) 2023 Dilshan Ramesh
  *   All rights reserved.
  */
+"use client"
 import Image from 'next/image';
 import React, { FC } from 'react';
 import { Thorchain } from 'iconsax-react';

@@ -2,7 +2,7 @@
  *   Copyright (c) 2023 Dilshan Ramesh
  *   All rights reserved.
  */
-
+"use client"
 import React, { FC } from 'react';
 import Institute from './institute';
 import sliitLogo from 'public/images/sliit-logo.png';

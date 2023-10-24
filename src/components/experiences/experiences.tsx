@@ -2,6 +2,7 @@
  *   Copyright (c) 2023 Dilshan Ramesh
  *   All rights reserved.
  */
+"use client"
 import React, { FC } from 'react'
 import Company from './company';
 import novaLogo from 'public/images/nova-logo.jpeg';

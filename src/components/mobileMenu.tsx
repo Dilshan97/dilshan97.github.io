@@ -2,7 +2,7 @@
  *   Copyright (c) 2023 Dilshan Ramesh
  *   All rights reserved.
  */
-
+"use client"
 import { motion } from 'framer-motion';
 import React, { FC, useContext } from 'react';
 import { CloseCircle, ArrowRight2 } from 'iconsax-react';
