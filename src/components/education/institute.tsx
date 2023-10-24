@@ -2,7 +2,7 @@
  *   Copyright (c) 2023 Dilshan Ramesh
  *   All rights reserved.
  */
-
+"use client"
 import React, { FC } from 'react'
 import Image, { StaticImageData } from 'next/image';
 

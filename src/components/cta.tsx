@@ -2,6 +2,7 @@
  *   Copyright (c) 2023 Dilshan Ramesh
  *   All rights reserved.
  */
+"use client"
 import React, { FC } from 'react';
 import { ArrowRight2 } from 'iconsax-react';
 

@@ -2,6 +2,7 @@
  *   Copyright (c) 2023 Dilshan Ramesh
  *   All rights reserved.
  */
+"use client"
 import React, { FC } from 'react'
 
 const Specify: FC = () => {
@@ -17,7 +18,7 @@ const Specify: FC = () => {
 
                 <div className="main-grid grid grid-cols-2 gap-4 my-10 mx-20">
                     <div className="bg-white rounded-3xl p-10">
-                        <h2 className="text-3xl font-medium">Ghost Theme developer at the intersection of design and code.</h2>
+                        <h2 className="text-3xl font-medium">Flutter developer at the intersection of design and code.</h2>
                         <br />
                         <p className="leading-7">Hey! I'm Dilshan Ramesh from Colombo, Sri Lanka. I turn your
                             designs into
