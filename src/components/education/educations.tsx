@@ -28,7 +28,7 @@ const Educations: FC = () => {
                     />
                     <Institute
                         title={'G.C.E Advanced Level (Engineering Technology)'}
-                        institute={'Mahinda Rajapaksha College - Homagama'}
+                        institute={'Mahinda Rajapaksha College - Homagama, Sri Lanka'}
                         duration={'2014 - 2016'}
                         logo={mrchLogo}
                     />

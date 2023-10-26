@@ -35,15 +35,25 @@ const FaqItem: FC<FaqItem> = ({ question, answer }) => {
             }}
             transition={{ scale: { type: 'spring', stiffness: 500, duration: 0.8 }, duration: 0.4 }}
             style={{ userSelect: 'none' }}
-            className="faq-item bg-white rounded-3xl p-12 flex justify-between items-center border hover:border-blue-500"
+            className="
+            faq-item 
+            bg-white 
+            rounded-3xl 
+            p-12 
+            flex 
+            justify-between 
+            items-center 
+            border hover:border-blue-500 
+            cursor-pointer"
+            onClick={() => click()}
         >
             {!isVisible ? (
                 <>
                     <motion.p
-                        animate={ref.current === 0 ? { 
-                            transform: "rotateX(0deg)" 
-                        } : { 
-                            transform: "rotateX(180deg)" 
+                        animate={ref.current === 0 ? {
+                            transform: "rotateX(0deg)"
+                        } : {
+                            transform: "rotateX(180deg)"
                         }}
                     >
                         {question}
@@ -53,10 +63,10 @@ const FaqItem: FC<FaqItem> = ({ question, answer }) => {
             ) : (
                 <>
                     <motion.p
-                        animate={ref.current === 0 ? { 
-                            transform: "rotateX(0deg)" 
-                        } : { 
-                            transform: "rotateX(180deg)" 
+                        animate={ref.current === 0 ? {
+                            transform: "rotateX(0deg)"
+                        } : {
+                            transform: "rotateX(180deg)"
                         }}
                     >
                         {answer}
