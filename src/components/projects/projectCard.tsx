@@ -3,40 +3,35 @@
  *   All rights reserved.
  */
 "use client"
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import React, { FC } from 'react';
-import { Thorchain } from 'iconsax-react';
-import wasthi from 'public/images/projects/Scene 9.png';
-
+import { createSlug } from '@/utils/common';
 interface ProjectCardProps {
   title: string;
-  langs: string[];
+  intro: string;
+  image: StaticImageData;
 }
-const ProjectCard: FC<ProjectCardProps> = ({ title, langs }) => {
+const ProjectCard: FC<ProjectCardProps> = ({ title, intro, image }) => {
   return (
-    <div className="rounded-3xl relative bg-white">
-      <Image
-        src={wasthi}
-        width={500}
-        height={500}
-        alt={title}
-        className="w-full h-full rounded-3xl"
-      />
-      <div className="icon absolute top-5 left-5">
-        <Thorchain size="32" />
+    <a href={`/projects/${createSlug(title)}`}>
+      <div className="bg-green-200">
+        <Image
+          // src={'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg'}
+          src={image}
+          width={500}
+          height={500}
+          alt={title}
+          className="w-full h-full"
+        />
       </div>
-      <div className="absolute bottom-5 left-5 max-sm:bottom-0">
-        <h3 className="text-xl font-bold w-2/4 max-sm:w-4/5">{title}</h3>
-        <p className="w-2/4 py-3 text-gray-500 text-base">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+      <div className="bottom-5 left-5 max-sm:bottom-0 pb-14">
+        <h3 className="pt-5 text-xl font-bold">{title}</h3>
+        <p className="py-3 text-black-500 text-base">
+          {intro}
         </p>
-        <div className="flex my-4">
-          {langs && langs.map((lang: string) => (
-            <p className="p-2 mr-1 bg-gray-200 rounded-xl text-sm">{lang}</p>
-          ))}
-        </div>
       </div>
-    </div>
+    </a>
   )
 }
 
