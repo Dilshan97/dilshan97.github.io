@@ -7,7 +7,7 @@ import React, { FC } from 'react';
 
 //components
 import Cta from '@/components/cta';
-import Specify from '@/components/specify';
+import Specify from '@/components/about/specify';
 import TechStack from '@/components/techStack';
 import Experiences from '@/components/experiences/experiences';
 import Educations from '@/components/education/educations';
