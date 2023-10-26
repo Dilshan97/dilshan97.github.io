@@ -7,9 +7,9 @@ import React, { FC, useContext } from 'react';
 import { AppContext } from '@/context/appContext';
 
 //components
-import Header from '@/components/header';
-import Footer from '@/components/footer';
-import MobileMenu from '@/components/mobileMenu';
+import Header from '@/components/common/header';
+import Footer from '@/components/common/footer';
+import MobileMenu from '@/components/common/mobileMenu';
 
 interface AppProps {
     children: React.ReactNode;

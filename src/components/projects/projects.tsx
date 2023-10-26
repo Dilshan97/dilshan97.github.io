@@ -18,7 +18,7 @@ const Projects: FC = () => {
                 <div className="mx-20 max-sm:mx-10">
                     <p className="text-4xl py-4 text-gray-600 max-sm:text-xl">Projects</p>
                     <h2 className="text-7xl max-sm:text-4xl">
-                        A small selection <br /> of my projects.
+                        The bit of work I do, <br /> and the business I help.
                     </h2>
                 </div>
 
