@@ -22,69 +22,62 @@ const Projects: FC = () => {
                     </h2>
                 </div>
 
-
-                {/* <div className="grid grid-cols-2 grid-flow-row gap-4 py-10 px-20 max-sm:grid-cols-1 max-sm:px-3">
-                    <ProjectCard title={'Dominos Pizza Clone App'} langs={['Flutter', 'Dart']} />
-                    <ProjectCard title={'Keells Super Clone App'} langs={['Flutter', 'Dart']} />
-                    <ProjectCard title={'Shopping Cart App'} langs={['Flutter', 'Dart']} />
-                    <ProjectCard title={'Weather App'} langs={['Flutter', 'Dart']} />
-                    <ProjectCard title={'Facebook Clone App'} langs={['Flutter', 'Dart']} />
-                    <ProjectCard title={'Grocery Shopping App'} langs={['Flutter', 'Dart']} />
-                    <ProjectCard title={'Tour Planner App'} langs={['Flutter', 'Dart']} />
-                    <ProjectCard title={'Coffee Shop App'} langs={['Flutter', 'Dart']} />
-                    <ProjectCard title={'Tesla Car App'} langs={['Flutter', 'Dart']} />
-                    <ProjectCard title={'Wasthi Production App'} langs={['Flutter', 'Dart']} />
-                </div> */}
-
-
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:px-20 py-10">
+                <div className="grid grid-cols-2 md:grid-cols-2 max-sm:grid-cols-1 gap-6 md:px-20 py-10">
                     <div className="grid gap-4">
-                        <a href='#'>
-                            <Image 
-                                src={image}
-                                className="h-auto max-w-full rounded-3xl"
-                                width={500}
-                                height={500}
-                                alt=""
-                            />
-                        </a>
-                        <div>
-                            <img className="h-auto max-w-full rounded-3xl" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="" />
-                        </div>
-                        <div>
-                            <img className="h-auto max-w-full rounded-3xl" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="" />
-                        </div>
+                        <ProjectCard
+                            title={'Dominos Pizza Clone App'}
+                            intro={''}
+                            image={image}
+                        />
+                        <ProjectCard
+                            title={'Keells Super Clone App'}
+                            intro={'Jobriver is a Polish employment platform. It often helps developers to find a job that suits them easily by filtering!'}
+                            image={image}
+                        />
+                        <ProjectCard
+                            title={'Shopping Cart App'}
+                            intro={'Jobriver is a Polish employment platform. It often helps developers to find a job that suits them easily by filtering!'}
+                            image={image}
+                        />
+                        <ProjectCard
+                            title={'Weather App'}
+                            intro={'Jobriver is a Polish employment platform. It often helps developers to find a job that suits them easily by filtering!'}
+                            image={weather}
+                        />
+                        <ProjectCard
+                            title={'Facebook Clone App'}
+                            intro={'Jobriver is a Polish employment platform. It often helps developers to find a job that suits them easily by filtering!'}
+                            image={image}
+                        />
                     </div>
-                    <div className="grid gap-4">
-                        <div>
-                        <Image 
-                                src={weather}
-                                className="h-auto max-w-full rounded-3xl"
-                                width={500}
-                                height={500}
-                                alt=""
-                            />
-                        </div>
-                        <div>
-                            <img className="h-auto max-w-full rounded-3xl" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="" />
-                        </div>
-                        <div>
-                            <img className="h-auto max-w-full rounded-3xl" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="" />
-                        </div>
-                    </div>
-                    <div className="grid gap-4">
-                        <div>
-                            <img className="h-auto max-w-full rounded-3xl" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="" />
-                        </div>
-                        <div>
-                            <img className="h-auto max-w-full rounded-3xl" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="" />
-                        </div>
-                        <div>
-                            <img className="h-auto max-w-full rounded-3xl" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="" />
-                        </div>
+                    <div className="grid gap-4 pt-40">
+                        <ProjectCard
+                            title={'Grocery Shopping App'}
+                            intro={'Jobriver is a Polish employment platform. It often helps developers to find a job that suits them easily by filtering!'}
+                            image={image}
+                        />
+                        <ProjectCard
+                            title={'Tour Planner App'}
+                            intro={'Jobriver is a Polish employment platform. It often helps developers to find a job that suits them easily by filtering!'}
+                            image={image}
+                        />
+                        <ProjectCard
+                            title={'Coffee Shop App'}
+                            intro={'Jobriver is a Polish employment platform. It often helps developers to find a job that suits them easily by filtering!'}
+                            image={image}
+                        />
+                        <ProjectCard
+                            title={'Tesla Car App'}
+                            intro={'Jobriver is a Polish employment platform. It often helps developers to find a job that suits them easily by filtering!'}
+                            image={image}
+                        />
+                        <ProjectCard
+                            title={'Wasthi Production App'}
+                            intro={'Jobriver is a Polish employment platform. It often helps developers to find a job that suits them easily by filtering!'}
+                            image={image}
+                        />
                     </div>
                 </div>
-
             </div>
         </div>
     )

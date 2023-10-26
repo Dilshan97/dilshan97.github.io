@@ -46,7 +46,7 @@ const Home: FC = () => {
 
           <div className="social-connect flex flex-row justify-center py-4">
             <a
-              className="px-2"
+              className="px-2 max-sm:w-16 max-sm:px-1"
               href="https://www.linkedin.com/in/dilshan-ramesh"
               title="Linkedin"
               target="_blank"
@@ -61,7 +61,7 @@ const Home: FC = () => {
             </a>
 
             <a
-              className="px-2"
+              className="px-2 max-sm:w-16 max-sm:px-1"
               href="https://www.instagram.com/dilshan_ramesh/"
               title="Instagram"
               target="_blank"
@@ -76,7 +76,7 @@ const Home: FC = () => {
             </a>
 
             <a
-              className="px-2"
+              className="px-2 max-sm:w-16 max-sm:px-1"
               href="https://www.facebook.com/dilshan.ramesh.75/"
               title="Facebook"
               target="_blank"

@@ -22,7 +22,7 @@ const Header: FC = () => {
             <Image 
               src={Logo}
               alt="dilshan97"
-              className="w-2/5"
+              className="w-1/5 max-sm:w-2/8"
               width={500}
               height={500}
             />
