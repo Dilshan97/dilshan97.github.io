@@ -14,7 +14,7 @@ const Cta: FC = () => {
                     What exciting projects or ideas do you have in mind?
                 </h2>
                 <a href="#" className="text-xl flex items-center justify-center text-blue-600">
-                    Start a project request
+                    Let’s design your app
                     <ArrowRight2 className="mx-1" size={16} />
                 </a>
             </div>

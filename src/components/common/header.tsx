@@ -22,7 +22,7 @@ const Header: FC = () => {
             <Image 
               src={Logo}
               alt="dilshan97"
-              className="w-1/5"
+              className="w-2/5"
               width={500}
               height={500}
             />
@@ -53,7 +53,7 @@ const Header: FC = () => {
 
         <div className="project-request max-sm:hidden max-md:hidden">
           <a href="#" className="flex items-center text-blue-600">
-            Project Request <ArrowRight2 className="mx-1" size={16} />
+          Let’s design your app <ArrowRight2 className="mx-1" size={16} />
           </a>
         </div>
 

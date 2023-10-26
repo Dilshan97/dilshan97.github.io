@@ -132,7 +132,7 @@ const MobileMenu: FC = () => {
                     className="text-2xl flex items-center py-8 text-blue-600"
                     href=""
                 >
-                    Project Request <ArrowRight2 className="mx-1" size={16} />
+                    Let’s design your app <ArrowRight2 className="mx-1" size={16} />
                 </motion.a>
             </div>
         </motion.div>
