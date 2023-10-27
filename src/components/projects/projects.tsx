@@ -7,9 +7,9 @@ import React, { FC } from 'react'
 import ProjectCard from './projectCard'
 import Image from 'next/image';
 
-import image from "public/images/projects/image.png";
-import wasthi from 'public/images/projects/Scene 9.png';
-import weather from 'public/images/projects/weather.png';
+import image from "@/assets/images/projects/image.png";
+import wasthi from '@/assets/images/projects/Scene 9.png';
+import weather from '@/assets/images/projects/weather.png';
 
 const Projects: FC = () => {
     return (

@@ -14,7 +14,7 @@ const Page: FC = () => {
                     clients normally ask me:
                 </h2>
 
-                <div className="grid grid-rows-3 grid-cols-2 grid-flow-col gap-4 py-10">
+                <div className="grid grid-rows-3 grid-cols-2 max-sm:grid-cols-1 grid-flow-col gap-4 py-10">
                     <FaqItem
                         question={'What specific services do you provide?'}
                         answer={'I specialize in web/mobile app development & offer consulting for design & development.'}
