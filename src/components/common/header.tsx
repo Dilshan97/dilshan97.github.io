@@ -14,14 +14,14 @@ const Header: FC = () => {
   const { setMenuOpen } = useContext(AppContext);
 
   return (
-    <div className="nav h-full py-4 sticky top-0 border-b-2 border-gary-900 z-10">
+    <div className="nav h-full py-4 sticky top-0 border-b-2 border-gary-900 z-1">
       <div className="container max-w-4xl flex items-center justify-between mx-auto sm:px-10">
         <div className="brand">
           <a href="/" title="Dilshan Ramesh"> 
             <Image 
               src={Logo}
               alt="dilshan97"
-              className="w-1/5 sm:w-4/12"
+              className="w-1/5 max-sm:w-4/12"
               width={500}
               height={500}
             />
