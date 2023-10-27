@@ -8,8 +8,7 @@
 import Link from 'next/link'
 import React, { FC } from 'react'
 import Lottie from 'react-lottie-player';
-
-import animation from 'public/animations/notfound.json';
+import animation from '@/assets/animations/notfound.json';
 
 const NotFound: FC = () => {
   return (
