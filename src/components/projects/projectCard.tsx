@@ -13,7 +13,7 @@ interface ProjectCardProps {
 }
 const ProjectCard: FC<ProjectCardProps> = ({ title, intro, image }) => {
   return (
-    <a href={`/projects/${createSlug(title)}`}>
+    <a href={`/projects/${createSlug(title)}`} className="m-2">
       <div className="bg-green-200">
         <Image
           // src={'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg'}
