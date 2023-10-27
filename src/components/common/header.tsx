@@ -6,7 +6,7 @@
 import Image from 'next/image';
 import { useTheme } from 'next-themes';
 import React, { FC, useContext } from 'react';
-import { AppContext } from '@/context/AppContext';
+import { AppContext } from '@/context/BaseContext';
 import { ArrowRight2, HambergerMenu } from 'iconsax-react';
 import Logo from "@/assets/images/logo.png";
 

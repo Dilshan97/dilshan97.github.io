@@ -10,7 +10,7 @@ import Header from '@/components/common/header';
 import Footer from '@/components/common/footer';
 import MobileMenu from '@/components/common/mobileMenu';
 import { ThemeProvider } from 'next-themes';
-import { AppContext } from '@/context/AppContext';
+import { AppContext } from '@/context/BaseContext';
 
 interface AppProps {
     children: React.ReactNode;
