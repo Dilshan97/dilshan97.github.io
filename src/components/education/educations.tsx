@@ -16,7 +16,7 @@ const Educations: FC = () => {
                 <div className="title mx-20">
                     <p className="text-4xl py-4 text-gray-600">Education</p>
                     <h2 className="text-7xl">
-                        Dynamic path to knowledge & growth.
+                        The Path of Learning I've Taken
                     </h2>
                 </div>
 

@@ -2,8 +2,8 @@ import App from './app';
 import React, { FC } from 'react';
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
-import AppContextProvider from '@/context/appContext';
-import '@/styles/globals.css';
+import AppContextProvider from '@/context/AppContext';
+import '@/assets/styles/globals.css';
 
 const poppins = Poppins({
   subsets: ['latin'],

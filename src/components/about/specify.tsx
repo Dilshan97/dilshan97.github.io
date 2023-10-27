@@ -10,7 +10,7 @@ const Specify: FC = () => {
         <div className="specification bg-slate-100">
             <div className="container mx-auto">
                 <div className="heading mx-20">
-                    <p className="text-4xl py-4 text-gray-600">Benefits</p>
+                    <p className="text-4xl py-4 text-gray-600">Summery</p>
                     <h2 className="text-7xl">
                         Your perfect Full-stack partner.
                     </h2>

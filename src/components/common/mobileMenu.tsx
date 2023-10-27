@@ -6,7 +6,7 @@
 import { motion } from 'framer-motion';
 import React, { FC, useContext } from 'react';
 import { CloseCircle, ArrowRight2 } from 'iconsax-react';
-import { AppContext } from '@/context/appContext';
+import { AppContext } from '@/context/AppContext';
 
 const MobileMenu: FC = () => {
 
