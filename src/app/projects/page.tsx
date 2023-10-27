@@ -5,9 +5,14 @@
 import React, { FC } from 'react';
 
 import ProjectCard from '@/components/projects/projectCard';
-import image from "@/assets/images/projects/image.png";
-import wasthi from '@/assets/images/projects/Scene 9.png';
+import image from "@/assets/images/projects/wasthi.png";
+
 import weather from '@/assets/images/projects/weather.png';
+import wasthiProduction from '@/assets/images/projects/wasthi-production.png';
+import facebook from '@/assets/images/projects/facebook.png';
+import shoppingCart from '@/assets/images/projects/shopping-cart.png';
+import eCommerce from '@/assets/images/projects/e-commerce.png';
+import dominos from '@/assets/images/projects/dominos.png';
 
 const Page: FC = () => {
   return (
@@ -15,8 +20,8 @@ const Page: FC = () => {
       <div className="container mx-auto">
         <div className="mx-20 max-sm:mx-10">
           <p className="text-4xl py-4 text-gray-600 max-sm:text-xl">Projects</p>
-          <h2 className="text-7xl max-sm:text-4xl">
-            The bit of work I do, <br /> and the business I help.
+          <h2 className="text-7xl max-sm:text-4xl max-w-4xl">
+            The bit of work I do, and the business I help.
           </h2>
         </div>
 
@@ -25,7 +30,7 @@ const Page: FC = () => {
             <ProjectCard
               title={'Dominos Pizza Clone App'}
               intro={'Jobriver is a Polish employment platform. It often helps developers to find a job that suits them easily by filtering!'}
-              image={image}
+              image={dominos}
             />
             <ProjectCard
               title={'Keells Super Clone App'}
@@ -35,7 +40,7 @@ const Page: FC = () => {
             <ProjectCard
               title={'Shopping Cart App'}
               intro={'Jobriver is a Polish employment platform. It often helps developers to find a job that suits them easily by filtering!'}
-              image={image}
+              image={shoppingCart}
             />
             <ProjectCard
               title={'Weather App'}
@@ -45,14 +50,14 @@ const Page: FC = () => {
             <ProjectCard
               title={'Facebook Clone App'}
               intro={'Jobriver is a Polish employment platform. It often helps developers to find a job that suits them easily by filtering!'}
-              image={image}
+              image={facebook}
             />
           </div>
           <div className="grid gap-4 sm:pt-40">
             <ProjectCard
               title={'Grocery Shopping App'}
               intro={'Jobriver is a Polish employment platform. It often helps developers to find a job that suits them easily by filtering!'}
-              image={image}
+              image={eCommerce}
             />
             <ProjectCard
               title={'Tour Planner App'}
@@ -72,7 +77,7 @@ const Page: FC = () => {
             <ProjectCard
               title={'Wasthi Production App'}
               intro={'Jobriver is a Polish employment platform. It often helps developers to find a job that suits them easily by filtering!'}
-              image={image}
+              image={wasthiProduction}
             />
           </div>
         </div>
