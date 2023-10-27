@@ -5,8 +5,9 @@
 "use client"
 import React, { FC } from 'react';
 import Institute from './institute';
-import sliitLogo from 'public/images/sliit-logo.png';
-import mrchLogo from 'public/images/mrch-logo.jpeg';
+
+import sliitLogo from '@/assets/images/sliit-logo.png';
+import mrchLogo from '@/assets/images/mrch-logo.jpeg';
 
 const Educations: FC = () => {
     return (

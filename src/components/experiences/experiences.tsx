@@ -5,8 +5,9 @@
 "use client"
 import React, { FC } from 'react'
 import Company from './company';
-import novaLogo from 'public/images/nova-logo.jpeg';
-import iLabLogo from 'public/images/ilabs-logo.jpeg';
+
+import novaLogo from '@/assets/images/nova-logo.jpeg';
+import iLabLogo from '@/assets/images/ilabs-logo.jpeg';
 
 const Experiences: FC = () => {
     return (

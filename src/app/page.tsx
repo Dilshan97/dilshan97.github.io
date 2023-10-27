@@ -6,9 +6,9 @@ import Image from 'next/image';
 import React, { FC } from 'react';
 import { ArrowRight2, Verify } from 'iconsax-react';
 
-import linkedin from 'public/images/icons/linkedin.svg';
-import instagram from 'public/images/icons/instagram.svg';
-import facebook from 'public/images/icons/facebook.svg';
+import linkedin from '@/assets/images/icons/linkedin.svg';
+import facebook from '@/assets/images/icons/facebook.svg';
+import instagram from '@/assets/images/icons/instagram.svg';
 
 const Home: FC = () => {
   return (

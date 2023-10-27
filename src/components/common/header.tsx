@@ -8,7 +8,7 @@ import Image from 'next/image';
 import React, { FC, useContext } from 'react';
 import { ArrowRight2, HambergerMenu } from 'iconsax-react';
 import { AppContext } from '@/context/appContext';
-import Logo from "public/images/logo.png";
+import Logo from "@/assets/images/logo.png";
 
 const Header: FC = () => {
 
