@@ -13,6 +13,8 @@ import facebook from '@/assets/images/projects/facebook.png';
 import shoppingCart from '@/assets/images/projects/shopping-cart.png';
 import eCommerce from '@/assets/images/projects/e-commerce.png';
 import dominos from '@/assets/images/projects/dominos.png';
+import coffee from '@/assets/images/projects/coffee-app.png';
+import tourPlanner from '@/assets/images/projects/tour-planner.png';
 
 const Page: FC = () => {
   return (
@@ -32,11 +34,11 @@ const Page: FC = () => {
               intro={'Jobriver is a Polish employment platform. It often helps developers to find a job that suits them easily by filtering!'}
               image={dominos}
             />
-            <ProjectCard
+            {/* <ProjectCard
               title={'Keells Super Clone App'}
               intro={'Jobriver is a Polish employment platform. It often helps developers to find a job that suits them easily by filtering!'}
               image={image}
-            />
+            /> */}
             <ProjectCard
               title={'Shopping Cart App'}
               intro={'Jobriver is a Polish employment platform. It often helps developers to find a job that suits them easily by filtering!'}
@@ -62,18 +64,18 @@ const Page: FC = () => {
             <ProjectCard
               title={'Tour Planner App'}
               intro={'Jobriver is a Polish employment platform. It often helps developers to find a job that suits them easily by filtering!'}
-              image={image}
+              image={tourPlanner}
             />
             <ProjectCard
               title={'Coffee Shop App'}
               intro={'Jobriver is a Polish employment platform. It often helps developers to find a job that suits them easily by filtering!'}
-              image={image}
+              image={coffee}
             />
-            <ProjectCard
+            {/* <ProjectCard
               title={'Tesla Car App'}
               intro={'Jobriver is a Polish employment platform. It often helps developers to find a job that suits them easily by filtering!'}
               image={image}
-            />
+            /> */}
             <ProjectCard
               title={'Wasthi Production App'}
               intro={'Jobriver is a Polish employment platform. It often helps developers to find a job that suits them easily by filtering!'}
