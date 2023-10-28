@@ -39,7 +39,7 @@ const Home: FC = () => {
             I specialize in Fullstack Web Development, Mobile  Application Development.
           </p>
 
-          <a href="#" className="flex items-center justify-center text-blue-600">
+          <a href="mailto:dilshanramesh81@gmail.com" className="flex items-center justify-center text-blue-600">
             Let’s design your app
             <ArrowRight2 className="mx-1" size={16} />
           </a>

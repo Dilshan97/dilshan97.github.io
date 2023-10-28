@@ -68,7 +68,7 @@ const Header: FC = () => {
         </nav>
 
         <div className="project-request max-sm:hidden max-md:hidden">
-          <a href="#" className="flex items-center text-blue-600">
+          <a href="mailto:dilshanramesh81@gmail.com" className="flex items-center text-blue-600">
             Let’s design your app <ArrowRight2 className="mx-1" size={16} />
           </a>
         </div>

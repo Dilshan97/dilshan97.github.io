@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     images: "https://github.com/dilshan97.png"
   },
   verification: {
-    google: '',
+    google: 'rhc0SldvTNmOomo_IaJaC4UsSt0N_lac1vyZy7Eaqkc',
   },
   appleWebApp: {
     capable: true, 
