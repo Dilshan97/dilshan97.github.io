@@ -31,7 +31,7 @@ const Header: FC = () => {
   };
 
   return (
-    <div className="nav h-full py-4 sticky top-0 border-b-2 border-gary-900 z-1">
+    <div className="nav h-full py-4 sticky top-0 border-b-2 border-gary-900 z-10">
       <div className="container max-w-4xl flex items-center justify-between mx-auto sm:px-10">
         <div className="brand">
           <a href="/" title="Dilshan Ramesh">

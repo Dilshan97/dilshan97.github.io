@@ -12,7 +12,7 @@ import instagram from '@/assets/images/icons/instagram.svg';
 
 const Home: FC = () => {
   return (
-    <div className="hero my-12 sm:h-screen sm:mb-20">
+    <div className="hero my-12 max-sm:h-screen sm:mb-20">
       <div className="container mx-auto flex flex-col justify-center items-center">
         <>
           <div className="radial-blur"></div>

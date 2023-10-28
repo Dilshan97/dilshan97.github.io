@@ -7,7 +7,7 @@ import React, { FC } from 'react';
 
 const Page: FC = () => {
     return (
-        <div className="faqs bg-slate-100 md:h-screen">
+        <div className="faqs bg-slate-100">
             <div className="container mx-auto max-w-4xl">
                 <h2 className="text-6xl text-center">
                     A few things 🙄 <br />
