@@ -57,8 +57,8 @@ export const metadata: Metadata = {
   creator: 'Dilshan Ramesh',
   publisher: 'GitHub Pages',
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   }
 }
 interface RootLayoutProps {
