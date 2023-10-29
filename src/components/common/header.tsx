@@ -63,7 +63,8 @@ const Header: FC = () => {
             </li>
 
             <li className="px-8">
-              <a href="https://dilshan97.hashnode.dev" target="_blank" rel="noopener">Blog</a>
+              <a href="/blog">Blog</a>
+              {/* <a href="https://dilshan97.hashnode.dev" target="_blank" rel="noopener">Blog</a> */}
             </li>
 
           </ul>

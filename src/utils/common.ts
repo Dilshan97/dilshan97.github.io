@@ -9,6 +9,21 @@ const createSlug = (title: string) => {
         .replace(/^-+/, '') // Remove leading hyphens
         .replace(/-+$/, ''); // Remove trailing hyphens
 }
+
+let defaultFormat: Intl.DateTimeFormatOptions = {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+};
+
+const formatDate = (
+    date: string,
+    format: Intl.DateTimeFormatOptions = defaultFormat,
+) => {
+    return new Intl.DateTimeFormat("en-GB", format).format(new Date(date));
+};
+
 export {
-    createSlug
+    createSlug,
+    formatDate
 }
