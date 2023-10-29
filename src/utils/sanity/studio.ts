@@ -61,6 +61,11 @@ export const studioConfig = defineConfig({
             ],
           },
           {
+            title: "Cover",
+            name: "cover",
+            type: "image"
+          },
+          {
             title: "Body",
             name: "body",
             type: "array",

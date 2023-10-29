@@ -13,6 +13,7 @@ const query = groq`*[_type == "post"] | order(date.published desc) {
     _id,
     slug,
     title,
+    cover {alt, "image": asset->url},
     description,
     date,
     body
@@ -52,7 +53,7 @@ async function Data() {
 
 const Page = () => {
     return (
-        <div className="bg-white p-40">
+        <div className="bg-white py-10 md:px-40 lg:px-40">
             <Data />
         </div>
     );

@@ -37,6 +37,10 @@ export type Post = SanityDefaults & {
   slug: SanitySlug;
   title: string;
   description: string;
+  cover: {
+    alt: string,
+    image: string
+  };
   date: {
     published: string;
     updated: string;
