@@ -12,15 +12,14 @@
     padding: 0px 20px;
 }
 
-/*----Small devices (landscape phones, 576px and up)----*/
-@media all and (max-width: 576px){
+
+/* @media all and (max-width: 576px){
     .nav nav {
         display: none;
     }
 }
-/*----Medium devices (tablets, 768px and up)----*/
 @media all and (max-width: 768px) {
     .nav nav {
         display: none;
     }
-}
+} */
