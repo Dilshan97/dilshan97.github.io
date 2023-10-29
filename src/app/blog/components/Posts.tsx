@@ -11,10 +11,10 @@ interface PostsProps {
 }
 const Posts: FC<PostsProps> = ({ posts }) => {
     return (
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-3 gap-4 px-20">
             {posts.map((post) => {
                 return (
-                    <div className="bg-white">
+                    <div className="bg-green-300">
                         <h3>
                             <a href={`/blog/${post.slug.current}`}>
                                 {post.title}
