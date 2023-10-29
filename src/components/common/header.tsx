@@ -34,9 +34,9 @@ const Header: FC = () => {
   return (
     <div className="nav h-full py-4 sticky top-0 border-b-2 border-gary-900 z-10">
       <div className="container max-w-4xl flex items-center justify-between mx-auto sm:px-10">
-        <div className="brand">
-          <a href="/" title="Dilshan Ramesh" className="font-bold">
-            DR
+        <div className="brand sm:w-1/5">
+          <a href="/" title="Dilshan Ramesh" className="font-normal">
+            Dilshan Ramesh
             {/* <Image
               src={Logo}
               alt="dilshan97"
@@ -47,7 +47,7 @@ const Header: FC = () => {
           </a>
         </div>
 
-        <nav>
+        <nav className="max-sm:hidden">
           <ul className="flex">
 
             <li className="px-8">
