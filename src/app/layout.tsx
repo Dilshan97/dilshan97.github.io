@@ -2,8 +2,8 @@ import App from './app';
 import React, { FC } from 'react';
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
-import AppContextProvider from '@/context/BaseContext';
 import '@/assets/styles/globals.css';
+import AppContextProvider from '@/context/BaseContext';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -26,8 +26,8 @@ export const metadata: Metadata = {
     }]
   },
   twitter: {
-    card: "summary_large_image", 
-    site: "@site", 
+    card: "summary_large_image",
+    site: "@site",
     creator: "@dilshanramesh81",
     images: "https://github.com/dilshan97.png"
   },
@@ -35,8 +35,8 @@ export const metadata: Metadata = {
     google: 'rhc0SldvTNmOomo_IaJaC4UsSt0N_lac1vyZy7Eaqkc',
   },
   appleWebApp: {
-    capable: true, 
-    title: "Dilshan Ramesh | Official website", 
+    capable: true,
+    title: "Dilshan Ramesh | Official website",
     statusBarStyle: "black-translucent"
   },
   authors: [

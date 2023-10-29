@@ -8,6 +8,7 @@ import Company from './company';
 
 import novaLogo from '@/assets/images/nova-logo.jpeg';
 import iLabLogo from '@/assets/images/ilabs-logo.jpeg';
+import { motion } from 'framer-motion';
 
 const Experiences: FC = () => {
     return (
@@ -20,7 +21,19 @@ const Experiences: FC = () => {
                     </h2>
                 </div>
 
-                <div className="grid grid-cols-2 gap-4 py-10 mx-20">
+                <motion.div
+                    variants={{
+                        hidden: { opacity: 0 },
+                        show: {
+                            opacity: 1,
+                            transition: {
+                                staggerChildren: 0.3,
+                            },
+                        },
+                    }}
+                    initial="hidden"
+                    animate="show"
+                    className="grid grid-cols-2 gap-4 py-10 mx-20">
                     <Company
                         title={'Senior Software Engineer'}
                         company={'Nova Solutions (Pvt) Ltd'}
@@ -56,7 +69,7 @@ const Experiences: FC = () => {
                         skills={'Firebase · VueJs · Android · Java'}
                         logo={novaLogo}
                     />
-                </div>
+                </motion.div>
             </div>
         </div>
     )

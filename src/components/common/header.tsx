@@ -7,12 +7,13 @@ import Image from 'next/image';
 import { useTheme } from 'next-themes';
 import React, { FC, useContext } from 'react';
 import { AppContext } from '@/context/BaseContext';
-import { ArrowRight2, HambergerMenu } from 'iconsax-react';
+import { ArrowRight2, HambergerMenu, CloseCircle } from 'iconsax-react';
 import Logo from "@/assets/images/logo.png";
+import { motion } from 'framer-motion';
 
 const Header: FC = () => {
 
-  const { setMenuOpen } = useContext(AppContext);
+  const { setMenuOpen, isMenuOpen } = useContext(AppContext);
   const { systemTheme, theme, setTheme } = useTheme();
   const currentTheme = theme === 'system' ? systemTheme : theme;
 
@@ -34,14 +35,15 @@ const Header: FC = () => {
     <div className="nav h-full py-4 sticky top-0 border-b-2 border-gary-900 z-10">
       <div className="container max-w-4xl flex items-center justify-between mx-auto sm:px-10">
         <div className="brand">
-          <a href="/" title="Dilshan Ramesh">
-            <Image
+          <a href="/" title="Dilshan Ramesh" className="font-bold">
+            DR
+            {/* <Image
               src={Logo}
               alt="dilshan97"
               className="w-1/5 max-sm:w-4/12"
               width={500}
               height={500}
-            />
+            /> */}
           </a>
         </div>
 
@@ -73,16 +75,149 @@ const Header: FC = () => {
           </a>
         </div>
 
-        {/* <button onClick={handleTheme}>click</button> */}
-
-        <div className="mobile-menu flex items-center max-sm:block max-lg:hidden max-md:block max-xl:hidden max-2xl:hidden 2xl:hidden">
-          <HambergerMenu
-            size="32"
-            className="cursor-pointer"
-            onClick={() => setMenuOpen(true)}
-          />
+        <div className="sm:hidden">
+          {isMenuOpen ? (
+            <CloseCircle
+              size="32"
+              className="cursor-pointer"
+              onClick={() => setMenuOpen(false)}
+            />
+          ) : (
+            <HambergerMenu
+              size="32"
+              className="cursor-pointer"
+              onClick={() => setMenuOpen(true)}
+            />
+          )}
         </div>
       </div>
+
+      <motion.div
+        animate={isMenuOpen ? "closed" : "open"}
+      >
+        <div className="max-sm:block max-lg:hidden max-md:block max-xl:hidden max-2xl:hidden 2xl:hidden">
+          <motion.div
+            className={`w-screen h-screen top-0 ${isMenuOpen ? 'block' : 'hidden'}`}
+            variants={{
+              exit: {
+                opacity: 0,
+                height: 0,
+                transition: {
+                  ease: 'easeInOut',
+                  duration: 0.3,
+                  delay: 1.2
+                }
+              }
+            }}
+            initial={{
+              height: 0,
+              opacity: 0
+            }}
+            animate={{
+              height: '100vh',
+              opacity: 1
+            }}
+            transition={{
+              duration: .5
+            }}
+            exit="exit"
+          >
+            <div className="flex flex-col items-center h-screen justify-center">
+              <motion.a
+                initial={{ y: 80, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: .6 }}
+                exit={{
+                  opacity: 0,
+                  y: 90,
+                  transition: {
+                    ease: "easeInOut",
+                    delay: .5
+                  }
+                }}
+                className="text-4xl px-8 py-4"
+                href="/projects"
+              >
+                Projects
+              </motion.a>
+
+              <motion.a
+                initial={{ y: 80, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: .5 }}
+                exit={{
+                  opacity: 0,
+                  y: 90,
+                  transition: {
+                    ease: "easeInOut",
+                    delay: .4
+                  }
+                }}
+                className="text-4xl px-8 py-4"
+                href="/about"
+              >
+                About
+              </motion.a>
+
+              <motion.a
+                initial={{ y: 80, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: .4 }}
+                exit={{
+                  opacity: 0,
+                  y: 90,
+                  transition: {
+                    ease: "easeInOut",
+                    delay: .3
+                  }
+                }}
+                className="text-4xl px-8 py-4"
+                href="/faq"
+              >
+                FAQ
+              </motion.a>
+
+              <motion.a
+                initial={{ y: 80, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: .3 }}
+                exit={{
+                  opacity: 0,
+                  y: 90,
+                  transition: {
+                    ease: "easeInOut",
+                    delay: .2
+                  }
+                }}
+                className="text-4xl px-8 py-4"
+                href="https://dilshan97.hashnode.dev"
+                target="_blank"
+                rel="noopener"
+              >
+                Blog
+              </motion.a>
+
+              <motion.a
+                initial={{ y: 80, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: .2 }}
+                exit={{
+                  opacity: 0,
+                  y: 90,
+                  transition: {
+                    ease: "easeInOut",
+                    delay: .1
+                  }
+                }}
+                className="text-2xl flex items-center py-8 text-blue-600"
+                href=""
+              >
+                Let’s design your app <ArrowRight2 className="mx-1" size={16} />
+              </motion.a>
+            </div>
+          </motion.div>
+        </div>
+      </motion.div>
     </div>
   )
 }
