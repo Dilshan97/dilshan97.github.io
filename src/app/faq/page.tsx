@@ -2,7 +2,9 @@
  *   Copyright (c) 2023 Dilshan Ramesh
  *   All rights reserved.
  */
+"use client"
 import FaqItem from '@/components/faq/faqItem';
+import { motion } from 'framer-motion';
 import React, { FC } from 'react';
 
 const Page: FC = () => {
@@ -14,7 +16,7 @@ const Page: FC = () => {
                     clients normally ask me:
                 </h2>
 
-                <div className="grid grid-rows-3 grid-cols-2 max-sm:grid-cols-1 grid-flow-col gap-4 py-10">
+                <motion.div className="grid grid-rows-3 grid-cols-2 max-sm:grid-cols-1 grid-flow-col gap-4 py-10">
                     <FaqItem
                         question={'What specific services do you provide?'}
                         answer={'I specialize in web/mobile app development & offer consulting for design & development.'}
@@ -44,7 +46,7 @@ const Page: FC = () => {
                         question={'How often can we communicate?'}
                         answer={'We can communicate as often as needed to ensure smooth progress and address any concerns'}
                     />
-                </div>
+                </motion.div>
             </div>
         </div>
     );

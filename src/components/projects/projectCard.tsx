@@ -6,6 +6,7 @@
 import Image, { StaticImageData } from 'next/image';
 import React, { FC } from 'react';
 import { createSlug } from '@/utils/common';
+import { motion } from 'framer-motion';
 interface ProjectCardProps {
   title: string;
   intro: string;
@@ -13,7 +14,22 @@ interface ProjectCardProps {
 }
 const ProjectCard: FC<ProjectCardProps> = ({ title, intro, image }) => {
   return (
-    <div className="m-2">
+    <motion.div
+      variants={{
+        hidden: {
+          opacity: 0,
+          y: 30,
+        },
+        show: {
+          opacity: 1,
+          y: 0,
+          transition: {
+            duration: 1,
+          },
+        },
+      }}
+      className="m-2"
+    >
       {/* <a href={`/projects/${createSlug(title)}`} className="m-2"> */}
       <div className="bg-white-200">
         <Image
@@ -32,7 +48,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ title, intro, image }) => {
         </p>
       </div>
       {/* </a> */}
-    </div>
+    </motion.div>
   )
 }
 

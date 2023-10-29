@@ -2,6 +2,7 @@
  *   Copyright (c) 2023 Dilshan Ramesh
  *   All rights reserved.
  */
+"use client"
 import Image from 'next/image';
 import React, { FC } from 'react';
 import { ArrowRight2, Verify } from 'iconsax-react';
@@ -9,21 +10,27 @@ import { ArrowRight2, Verify } from 'iconsax-react';
 import linkedin from '@/assets/images/icons/linkedin.svg';
 import facebook from '@/assets/images/icons/facebook.svg';
 import instagram from '@/assets/images/icons/instagram.svg';
+import dilshan97 from '@/assets/images/dilshan97.jpeg';
+
+import { motion } from 'framer-motion';
 
 const Home: FC = () => {
+
   return (
     <div className="hero my-12 max-sm:h-screen sm:mb-20">
       <div className="container mx-auto flex flex-col justify-center items-center">
-        <>
+        <motion.div
+          className="flex justify-center w-full"
+        >
           <div className="radial-blur"></div>
           <Image
-            src="https://github.com/dilshan97.png"
+            src={dilshan97}
             alt="dilshan97"
             className="w-1/5 rounded-full"
             width={500}
             height={500}
           />
-        </>
+        </motion.div>
 
         <div className="text-center flex flex-col justify-center items-center">
           <h3 className="text-3xl py-8 flex items-center justify-center">

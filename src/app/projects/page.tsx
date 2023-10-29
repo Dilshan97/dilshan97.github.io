@@ -2,6 +2,7 @@
  *   Copyright (c) 2023 Dilshan Ramesh
  *   All rights reserved.
  */
+"use client";
 import React, { FC } from 'react';
 
 import ProjectCard from '@/components/projects/projectCard';
@@ -15,6 +16,7 @@ import eCommerce from '@/assets/images/projects/e-commerce.png';
 import dominos from '@/assets/images/projects/dominos.png';
 import coffee from '@/assets/images/projects/coffee-app.png';
 import tourPlanner from '@/assets/images/projects/tour-planner.png';
+import { motion } from 'framer-motion';
 
 const Page: FC = () => {
   return (
@@ -27,7 +29,20 @@ const Page: FC = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-2 max-sm:grid-cols-1 gap-6 md:px-20 py-10">
+        <motion.div
+          variants={{
+            hidden: { opacity: 0 },
+            show: {
+              opacity: 1,
+              transition: {
+                staggerChildren: 0.3,
+              },
+            },
+          }}
+          initial="hidden"
+          animate="show"
+          className="grid grid-cols-2 md:grid-cols-2 max-sm:grid-cols-1 gap-6 md:px-20 py-10"
+        >
           <div className="grid gap-4">
             <ProjectCard
               title={'Dominos Pizza Clone App'}
@@ -89,7 +104,7 @@ const Page: FC = () => {
               image={wasthiProduction}
             /> */}
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
