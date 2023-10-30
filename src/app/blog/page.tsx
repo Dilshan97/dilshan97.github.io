@@ -34,7 +34,6 @@ async function Data() {
 
     const hashnodeResponse = await resp.json();
     const posts = hashnodeResponse.data.user.publication.posts;
-    console.log(hashnodeResponse);
     return <Posts posts={posts}/>
 }
 
