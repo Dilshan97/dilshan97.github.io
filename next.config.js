@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'export',
+    // output: 'export',
     poweredByHeader: false,
     images: {
         dangerouslyAllowSVG: true,
@@ -12,6 +12,14 @@ const nextConfig = {
             {
                 protocol: 'https',
                 hostname: 'skillicons.dev',
+            },
+            {
+                protocol: "https",
+                hostname: "cdn.sanity.io"
+            },
+            {
+                protocol: "https",
+                hostname: "cdn.hashnode.com"
             }
         ]
     }
