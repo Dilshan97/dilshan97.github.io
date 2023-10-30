@@ -28,7 +28,7 @@ const Specify: FC = () => {
                         </p>
                     </div>
 
-                    <div className="sub-grid grid grid-rows-2 grid-flow-col gap-4">
+                    <div className="sub-grid grid grid-rows-2 grid-cols-2 grid-flow-col gap-4">
                         <div className="item text-center bg-white rounded-3xl p-10">
                             <h3 className="linear-gradient-1 text-7xl">10<span className="text-2xl align-top">+</span></h3>
                             <p className="py-2">Happy clients</p>
