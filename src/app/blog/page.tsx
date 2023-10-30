@@ -2,6 +2,7 @@
  *   Copyright (c) 2023 Dilshan Ramesh
  *   All rights reserved.
  */
+import axios from "axios";
 import Posts from "./components/Posts";
 
 const query = `{
