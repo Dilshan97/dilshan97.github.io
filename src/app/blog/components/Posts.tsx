@@ -3,12 +3,12 @@
  *   All rights reserved.
  */
 
-import { formatDate } from "@/utils/common";
-import { PostPreview } from "@/utils/types";
-import Image from "next/image";
 import { FC } from "react";
+import Image from "next/image";
+import PostModel from "@/utils/post.model";
+import { formatDate } from "@/utils/common";
 interface PostsProps {
-    posts: PostPreview[]
+    posts: PostModel[]
 }
 const Posts: FC<PostsProps> = ({ posts }) => {
     return (
@@ -22,9 +22,9 @@ const Posts: FC<PostsProps> = ({ posts }) => {
         ">
             {posts.map((post) => {
                 return (
-                    <div className="bg-white-300 w-100">
+                    <div key={post._id} className="bg-white-300 w-100" >
                         <Image
-                            src={post.cover.image}
+                            src={post.coverImage}
                             width={500}
                             height={500}
                             alt={post.title}
@@ -32,12 +32,12 @@ const Posts: FC<PostsProps> = ({ posts }) => {
                         />
                         <div className="my-4">
                             <h3 className="text-2xl	font-semibold">
-                                <a href={`/blog/${post.slug.current}`}>
+                                <a href={`https://dilshan97.hashnode.dev/${post.slug}`} target="_blank">
                                     {post.title}
                                 </a>
                             </h3>
                             <div className="flex flex-row justify-between py-3">
-                                <p className="text-sm">Published {formatDate(post.date.published)}</p>
+                                <p className="text-sm">Published {formatDate(post.dateAdded)}</p>
                                 <p className="text-sm">By Dilshan Ramesh</p>
                             </div>
                         </div>
