@@ -24,8 +24,8 @@ import wasthiProduction from '@/assets/images/projects/wasthi-production.png';
 const Page: FC = () => {
   return (
     <div className="projects bg-white-50">
-      <div className="container mx-auto">
-        <div className="mx-20 max-sm:mx-10">
+      <div className="container mx-auto max-w-4xl">
+        <div>
           <p className="text-4xl py-4 text-gray-600 max-sm:text-xl">Projects</p>
           <h2 className="text-7xl max-sm:text-4xl max-w-4xl">
             The bit of work I do, and the business I help.
@@ -45,7 +45,7 @@ const Page: FC = () => {
             }}
             initial="hidden"
             animate="show"
-            className="grid grid-cols-2 md:grid-cols-2 max-sm:grid-cols-1 gap-6 md:px-20 py-10"
+            className="grid grid-cols-2 md:grid-cols-2 max-sm:grid-cols-1 gap-6 py-10"
           >
             <div className="grid gap-4">
               <ProjectCard
