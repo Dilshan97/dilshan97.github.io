@@ -3,10 +3,6 @@
  *   All rights reserved.
  */
 
-.specification {
-   padding: 5rem 0rem;
-}
-
 .specification .linear-gradient-1 {
    background-image: linear-gradient(135deg, #63e3dc, #1254c2);
 }

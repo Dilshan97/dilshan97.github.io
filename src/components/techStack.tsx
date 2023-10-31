@@ -8,7 +8,7 @@ import React, { FC } from 'react';
 
 const TechStack: FC = () => {
     return (
-        <div className="tech-stack bg-white-100">
+        <div className="tech-stack bg-white-100 py-28">
             <div className="container mx-auto">
                 <div className="title mx-20">
                     <p className="text-4xl py-4 text-gray-600">Tech Stack</p>

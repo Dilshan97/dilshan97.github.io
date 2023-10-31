@@ -12,14 +12,7 @@ interface PostsProps {
 }
 const Posts: FC<PostsProps> = ({ posts }) => {
     return (
-        <div className="
-        grid 
-        grid-cols-2 
-        gap-4 
-        px-20
-        max-sm:px-4 
-        max-sm:grid-cols-1
-        ">
+        <>
             {posts.map((post) => {
                 return (
                     <div key={post._id} className="bg-white-300 w-100" >
@@ -28,7 +21,7 @@ const Posts: FC<PostsProps> = ({ posts }) => {
                             width={500}
                             height={500}
                             alt={post.title}
-                            className="object-fill"
+                            className="object-fill rounded-2xl"
                         />
                         <div className="my-4">
                             <h3 className="text-2xl	font-semibold">
@@ -36,15 +29,14 @@ const Posts: FC<PostsProps> = ({ posts }) => {
                                     {post.title}
                                 </a>
                             </h3>
-                            <div className="flex flex-row justify-between py-3">
+                            <div className="flex flex-row justify-between py-1">
                                 <p className="text-sm">Published {formatDate(post.dateAdded)}</p>
-                                <p className="text-sm">By Dilshan Ramesh</p>
                             </div>
                         </div>
                     </div>
                 )
             })}
-        </div>
+        </>
     );
 }
 

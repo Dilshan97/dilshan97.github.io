@@ -11,7 +11,7 @@ import mrchLogo from '@/assets/images/mrch-logo.jpeg';
 
 const Educations: FC = () => {
     return (
-        <div className="educations bg-orange-50">
+        <div className="educations bg-orange-50 py-24">
             <div className="container mx-auto">
                 <div className="title mx-20">
                     <p className="text-4xl py-4 text-gray-600">Education</p>
