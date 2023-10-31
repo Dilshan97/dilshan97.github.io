@@ -11,14 +11,14 @@ import TechStack from '@/components/techStack';
 import Experiences from '@/components/experiences/experiences';
 import Educations from '@/components/education/educations';
 
-const Page:FC = () => {
+const Page: FC = () => {
   return (
     <>
-      <Specify/>
-      <Experiences/>
-      <Educations/>
-      <TechStack/>
-      <Cta/>
+      <Specify />
+      <Experiences />
+      <Educations />
+      <TechStack />
+      <Cta />
     </>
   );
 }

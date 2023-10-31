@@ -7,7 +7,7 @@ import React, { FC } from 'react'
 
 const Specify: FC = () => {
     return (
-        <div className="specification bg-slate-100">
+        <div className="specification bg-slate-100 py-20">
             <div className="container mx-auto">
                 <div className="heading mx-20">
                     <p className="text-4xl py-4 text-gray-600">Summery</p>

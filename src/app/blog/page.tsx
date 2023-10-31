@@ -46,7 +46,7 @@ const Page = () => {
                     <p className="text-4xl py-4 text-gray-600 max-sm:text-xl">
                         Blog
                     </p>
-                    <h2 className="text-7xl max-sm:text-4xl max-w-4xl">
+                    <h2 className="text-6xl max-sm:text-4xl max-w-4xl">
                         Where Ideas Meet Interaction
                     </h2>
                 </div>

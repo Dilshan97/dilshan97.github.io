@@ -27,7 +27,7 @@ const Page: FC = () => {
       <div className="container mx-auto max-w-4xl">
         <div>
           <p className="text-4xl py-4 text-gray-600 max-sm:text-xl">Projects</p>
-          <h2 className="text-7xl max-sm:text-4xl max-w-4xl">
+          <h2 className="text-6xl max-sm:text-4xl max-w-4xl">
             The bit of work I do, and the business I help.
           </h2>
         </div>

@@ -12,7 +12,7 @@ import { motion } from 'framer-motion';
 
 const Experiences: FC = () => {
     return (
-        <div className="experiences bg-gray-100">
+        <div className="experiences bg-gray-100 py-20">
             <div className="container mx-auto">
                 <div className="title mx-20">
                     <p className="text-4xl py-4 text-gray-600">Experiences</p>
