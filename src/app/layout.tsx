@@ -21,9 +21,9 @@ export const metadata: Metadata = {
     title: 'Dilshan Ramesh | Official website',
     description: 'Explore the world of Dilshan Ramesh: a passionate developer, innovator, and creator. Discover a diverse range of projects, insights, and expertise in technology and beyond.',
     siteName: 'Dilshan Ramesh | Official website',
-    images: [{
+    images: {
       url: 'https://github.com/dilshan97.png'
-    }]
+    }
   },
   twitter: {
     card: "summary_large_image",
@@ -59,7 +59,8 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-  }
+  },
+  metadataBase: new URL("https://dilshan97.github.io")
 }
 interface RootLayoutProps {
   children: React.ReactNode;
