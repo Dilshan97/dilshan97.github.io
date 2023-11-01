@@ -2,8 +2,10 @@
  *   Copyright (c) 2023 Dilshan Ramesh
  *   All rights reserved.
  */
-import { Suspense } from "react";
+"use client"
+import { Suspense, useEffect, useState } from "react";
 import Posts from "./components/Posts";
+import PostModel from "@/utils/post.model";
 
 const query = `{
     user(username: "dilshandev") {
@@ -22,23 +24,37 @@ const query = `{
     }
 }`;
 
-
-async function Data() {
-    const resp: Response = await fetch('https://api.hashnode.com', {
-        method: 'POST',
-        headers: {
-            'Content-type': 'application/json',
-            Authentication: 'd63afa03-efe3-4518-90ac-be217da89809'
-        },
-        body: JSON.stringify({ query })
-    });
-
-    const hashnodeResponse = await resp.json();
-    const posts = hashnodeResponse.data.user.publication.posts;
-    return <Posts posts={posts} />
-}
-
 const Page = () => {
+
+    const [posts, setPosts] = useState<PostModel[]>([]);
+
+    useEffect(() => {
+        let unmounted = false;
+        
+        const getPosts = async () => {
+            fetch('https://api.hashnode.com', {
+                method: 'POST',
+                headers: {
+                    'Content-type': 'application/json',
+                    Authentication: 'd63afa03-efe3-4518-90ac-be217da89809'
+                },
+                body: JSON.stringify({ query })
+            })
+                .then(res => res.json())
+                .then(res => {
+                    if (!unmounted) {
+                        setPosts(res.data.user.publication.posts);
+                    }
+                });
+        }
+
+        getPosts();
+
+        return () => {
+            unmounted = true;
+        }
+    }, [])
+
     return (
         <div className="bg-white py-10 ">
             <div className="container mx-auto max-w-4xl">
@@ -51,7 +67,7 @@ const Page = () => {
                     </h2>
                 </div>
 
-                <Suspense fallback={<>Loading</>}>
+                <Suspense fallback={<p>Loading</p>}>
                     <div
                         className="
                             grid 
@@ -60,7 +76,7 @@ const Page = () => {
                             max-sm:px-4 
                             max-sm:grid-cols-1
                             py-10">
-                        <Data />
+                        <Posts posts={posts} />
                     </div>
                 </Suspense>
             </div>
