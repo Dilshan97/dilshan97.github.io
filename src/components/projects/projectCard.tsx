@@ -3,16 +3,20 @@
  *   All rights reserved.
  */
 "use client"
-import Image, { StaticImageData } from 'next/image';
-import React, { FC } from 'react';
-import { createSlug } from '@/utils/common';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import React, { FC, useState } from 'react';
+import ProjectsListLoading from '@/app/projects/components/ProjectsListLoading';
+import ProjectModel from '@/utils/models/project.model';
 interface ProjectCardProps {
-  title: string;
-  intro: string;
-  image: StaticImageData;
+  project: ProjectModel;
 }
-const ProjectCard: FC<ProjectCardProps> = ({ title, intro, image }) => {
+const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
+
+  const [isLoaded, setLoaded] = useState<boolean>(false);
+
+  const onLoad = () => setLoaded(true);
+
   return (
     <motion.div
       variants={{
@@ -30,24 +34,26 @@ const ProjectCard: FC<ProjectCardProps> = ({ title, intro, image }) => {
       }}
       className="m-2"
     >
-      {/* <a href={`/projects/${createSlug(title)}`} className="m-2"> */}
       <div className="bg-white-200">
         <Image
-          src={image}
+          src={project.image}
           width={500}
           height={500}
-          alt={title}
+          alt={project.title}
           className="w-full h-full"
+          onLoad={onLoad}
         />
+        {!isLoaded && <ProjectsListLoading />}
       </div>
 
-      <div className="bottom-5 left-5 max-sm:bottom-0 pb-14">
-        <h3 className="pt-5 text-xl font-bold">{title}</h3>
+      <div className="bottom-5 left-5 max-sm:bottom-0 pb-10">
+        <h3 className="pt-3 text-xl font-bold">
+          {project.title}
+        </h3>
         <p className="py-3 text-black-500 text-base">
-          {intro}
+          {project.intro}
         </p>
       </div>
-      {/* </a> */}
     </motion.div>
   )
 }

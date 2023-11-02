@@ -5,7 +5,7 @@
 
 import { FC } from "react";
 import Image from "next/image";
-import PostModel from "@/utils/post.model";
+import PostModel from "@/utils/models/post.model";
 import { formatDate } from "@/utils/common";
 interface PostsProps {
     posts: PostModel[]
