@@ -58,7 +58,7 @@ const Page = () => {
     return (
         <div className="bg-white py-10 ">
             <div className="container mx-auto max-w-4xl">
-                <div className="mx-2 max-sm:mx-10">
+                <div className="mx-2 max-sm:mx-5">
                     <p className="text-4xl py-4 text-gray-600 max-sm:text-xl">
                         Blog
                     </p>

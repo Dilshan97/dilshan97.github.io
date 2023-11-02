@@ -66,7 +66,7 @@ const Page: FC = () => {
   return (
     <div className="projects bg-white-50">
       <div className="container mx-auto max-w-5xl">
-        <div>
+        <div className="mx-2 max-sm:mx-5">
           <p className="text-4xl py-4 text-gray-600 max-sm:text-xl">Projects</p>
           <h2 className="text-6xl max-sm:text-4xl max-w-4xl">
             The bit of work I do, and the business I help.

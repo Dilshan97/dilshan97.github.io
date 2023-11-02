@@ -17,7 +17,7 @@ const Footer: FC = () => {
               <a href="#" className="text-sm">8 Reasons for Flutter</a>
             </li>
             <li>
-              <a href="#" className="text-sm">Privacy</a>
+              <a href="/privacy" className="text-sm">Privacy</a>
             </li>
           </ul>
         </div>
