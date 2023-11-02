@@ -7,8 +7,8 @@ import { motion } from 'framer-motion';
 import React, { FC, Suspense } from 'react';
 
 //components
-import ProjectCard from '@/components/projects/projectCard';
-import ProjectsListLoading from './components/ProjectsListLoading';
+import ProjectCard from '@/app/projects/components/projectCard';
+import { ProjectsListLoading } from './components/ProjectsListLoading';
 
 //projects
 import image from "@/assets/images/projects/wasthi.png";

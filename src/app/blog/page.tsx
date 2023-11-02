@@ -4,8 +4,9 @@
  */
 "use client"
 import { Suspense, useEffect, useState } from "react";
-import Posts from "./components/Posts";
+import Post from "./components/Post";
 import PostModel from "@/utils/models/post.model";
+import { BlogListLoading } from "./components/BlogLoading";
 
 const query = `{
     user(username: "dilshandev") {
@@ -30,7 +31,7 @@ const Page = () => {
 
     useEffect(() => {
         let unmounted = false;
-        
+
         const getPosts = async () => {
             fetch('https://api.hashnode.com', {
                 method: 'POST',
@@ -67,18 +68,11 @@ const Page = () => {
                     </h2>
                 </div>
 
-                <Suspense fallback={<p>Loading</p>}>
-                    <div
-                        className="
-                            grid 
-                            grid-cols-2 
-                            gap-4
-                            max-sm:px-4 
-                            max-sm:grid-cols-1
-                            py-10">
-                        <Posts posts={posts} />
-                    </div>
-                </Suspense>
+                <div className="grid grid-cols-2  gap-4 max-sm:px-4 max-sm:grid-cols-1 py-10">
+                    <Suspense fallback={<BlogListLoading />}>
+                        {posts.map((post: PostModel) => <Post post={post} />)}
+                    </Suspense>
+                </div>
             </div>
         </div>
     );
