@@ -5,7 +5,7 @@
 "use client"
 import { Suspense, useEffect, useState } from "react";
 import Posts from "./components/Posts";
-import PostModel from "@/utils/post.model";
+import PostModel from "@/utils/models/post.model";
 
 const query = `{
     user(username: "dilshandev") {
