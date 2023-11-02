@@ -3,7 +3,7 @@
  *   All rights reserved.
  */
 "use client"
-import FaqItem from '@/components/faq/faqItem';
+import FaqItem from '@/app/faq/components/faqItem';
 import { motion } from 'framer-motion';
 import React, { FC } from 'react';
 

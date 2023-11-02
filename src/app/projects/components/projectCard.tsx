@@ -6,7 +6,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import React, { FC, useState } from 'react';
-import ProjectsListLoading from '@/app/projects/components/ProjectsListLoading';
+import { ProjectImageLoading } from '@/app/projects/components/ProjectsListLoading';
 import ProjectModel from '@/utils/models/project.model';
 interface ProjectCardProps {
   project: ProjectModel;
@@ -43,7 +43,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
           className="w-full h-full"
           onLoad={onLoad}
         />
-        {!isLoaded && <ProjectsListLoading />}
+        {!isLoaded && <ProjectImageLoading />}
       </div>
 
       <div className="bottom-5 left-5 max-sm:bottom-0 pb-10">

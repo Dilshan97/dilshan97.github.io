@@ -1,24 +1,22 @@
-
 /*
-*   Copyright (c) 2023 Dilshan Ramesh
-*   All rights reserved.
-*/
-
+ *   Copyright (c) 2023 Dilshan Ramesh
+ *   All rights reserved.
+ */
 import Skeleton from "@/components/common/Skeleton";
 import SkeletonText from "@/components/common/SkeletonText";
 
-const ProjectsListLoading = () => {
+const BlogListLoading = () => {
     return (
         <>
-            <ProjectItemLoading/>
-            <ProjectItemLoading/>
-            <ProjectItemLoading/>
-            <ProjectItemLoading/>
+            <BlogItemLoading/>
+            <BlogItemLoading/>
+            <BlogItemLoading/>
+            <BlogItemLoading/>
         </>
     );
 }
 
-const ProjectItemLoading = () => {
+const BlogItemLoading = () => {
     return (
         <div>
             <Skeleton className="w-full h-[180px] !rounded-2xl" />
@@ -28,7 +26,7 @@ const ProjectItemLoading = () => {
     );
 }
 
-const ProjectImageLoading = () => {
+const BlogImageLoading = () => {
     return (
         <div>
             <Skeleton className="w-full h-[180px] !rounded-2xl" />
@@ -37,7 +35,7 @@ const ProjectImageLoading = () => {
 }
 
 export {
-    ProjectItemLoading,
-    ProjectsListLoading,
-    ProjectImageLoading
+    BlogItemLoading,
+    BlogListLoading,
+    BlogImageLoading
 };
