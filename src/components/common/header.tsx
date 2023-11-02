@@ -191,9 +191,7 @@ const Header: FC = () => {
                   }
                 }}
                 className="text-4xl px-8 py-4"
-                href="https://dilshan97.hashnode.dev"
-                target="_blank"
-                rel="noopener"
+                href="/blog"
               >
                 Blog
               </motion.a>
