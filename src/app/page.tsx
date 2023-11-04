@@ -4,15 +4,11 @@
  */
 "use client"
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 import React, { FC } from 'react';
 import { ArrowRight2, Verify } from 'iconsax-react';
-
-import linkedin from '@/assets/images/icons/linkedin.svg';
-import facebook from '@/assets/images/icons/facebook.svg';
-import instagram from '@/assets/images/icons/instagram.svg';
 import dilshan97 from '@/assets/images/dilshan97.jpeg';
 
-import { motion } from 'framer-motion';
 
 const Home: FC = () => {
 
@@ -58,13 +54,7 @@ const Home: FC = () => {
               title="Linkedin"
               target="_blank"
               rel="noopener">
-              <Image
-                src={linkedin}
-                width={500}
-                height={500}
-                className="w-8 rounded-full"
-                alt='Linkedin'
-              />
+              <i className="ri-linkedin-box-line text-4xl text-zinc-600"></i>
             </a>
 
             <a
@@ -73,28 +63,16 @@ const Home: FC = () => {
               title="Instagram"
               target="_blank"
               rel="noopener">
-              <Image
-                src={instagram}
-                width={500}
-                height={500}
-                className="w-8 rounded-full"
-                alt='Instagram'
-              />
+              <i className="ri-instagram-line text-4xl text-zinc-600"></i>
             </a>
 
             <a
               className="px-2 max-sm:w-16 max-sm:px-1"
-              href="https://www.facebook.com/dilshan.ramesh.75/"
-              title="Facebook"
+              href="https://github.com/Dilshan97"
+              title="GitHub"
               target="_blank"
               rel="noopener">
-              <Image
-                src={facebook}
-                width={500}
-                height={500}
-                className="w-8 rounded-full"
-                alt='Facebook'
-              />
+              <i className="ri-github-fill text-4xl text-zinc-600"></i>
             </a>
           </div>
         </div>
