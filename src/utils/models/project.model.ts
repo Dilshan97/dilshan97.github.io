@@ -8,6 +8,7 @@ interface ProjectModel {
     title: string;
     intro: string;
     image: StaticImageData;
+    url?: string;
 }
 
 export default ProjectModel;
