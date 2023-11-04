@@ -33,21 +33,14 @@ const Header: FC = () => {
 
   return (
     <div className="nav h-full py-4 sticky top-0 border-b-2 border-gary-900 z-10">
-      <div className="container max-w-4xl flex items-center justify-between mx-auto sm:px-10">
+      <div className="container max-w-5xl flex items-center justify-between mx-auto sm:px-10">
         <div className="brand sm:w-1/5">
           <a href="/" title="Dilshan Ramesh" className="font-normal">
             Dilshan Ramesh
-            {/* <Image
-              src={Logo}
-              alt="dilshan97"
-              className="w-1/5 max-sm:w-4/12"
-              width={500}
-              height={500}
-            /> */}
           </a>
         </div>
 
-        <nav className="max-sm:hidden">
+        <nav className="max-lg:hidden">
           <ul className="flex">
 
             <li className="px-8">
@@ -64,19 +57,18 @@ const Header: FC = () => {
 
             <li className="px-8">
               <a href="/blog">Blog</a>
-              {/* <a href="https://dilshan97.hashnode.dev" target="_blank" rel="noopener">Blog</a> */}
             </li>
 
           </ul>
         </nav>
 
-        <div className="project-request max-sm:hidden max-md:hidden">
+        <div className="project-request hidden lg:block max-md:hidden">
           <a href="mailto:dilshanramesh81@gmail.com" className="flex items-center text-blue-600">
             Let’s design your app <ArrowRight2 className="mx-1" size={16} />
           </a>
         </div>
 
-        <div className="sm:hidden">
+        <div className="sm:hidden max-md:block">
           {isMenuOpen ? (
             <CloseCircle
               size="32"
