@@ -99,6 +99,7 @@ const Page: FC = () => {
               <ProjectCard
                 project={project}
                 direction={key % 2 == 0 ? "right" : "left"}
+                key={key}
               />
             )}
           </Suspense>
