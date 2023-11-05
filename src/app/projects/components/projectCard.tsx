@@ -27,7 +27,8 @@ const ProjectCard: FC<ProjectCardProps> = ({ project, direction }) => {
           },
         },
       }}
-      className="bg-white flex flex-col md:flex-row md:gap-[32px] lg:gap-0 lg:items-center lg:justify-between shadow-card-smooth py-[40px] px-[40px] rounded-[4px]">
+      className="bg-white flex flex-col md:flex-row md:gap-[32px] lg:gap-0 lg:items-center lg:justify-between shadow-card-smooth py-[40px] px-[40px] rounded-[4px]"
+      key={project.title}>
 
       {direction == "left" && (
         <div className="flex pt-[24px] md:pt-0 md:pr-5">

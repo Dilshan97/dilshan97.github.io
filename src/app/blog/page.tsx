@@ -28,11 +28,13 @@ const query = `{
 const Page = () => {
 
     const [posts, setPosts] = useState<PostModel[]>([]);
+    const [isLoading, setLoading] = useState<boolean>(false);
 
     useEffect(() => {
         let unmounted = false;
 
         const getPosts = async () => {
+            setLoading(true);
             fetch('https://api.hashnode.com', {
                 method: 'POST',
                 headers: {
@@ -46,7 +48,8 @@ const Page = () => {
                     if (!unmounted) {
                         setPosts(res.data.user.publication.posts);
                     }
-                });
+                })
+                .finally(() => setLoading(false));
         }
 
         getPosts();
@@ -70,6 +73,7 @@ const Page = () => {
 
                 <div className="grid grid-cols-2  gap-4 max-sm:px-4 max-sm:grid-cols-1 py-10">
                     <Suspense fallback={<BlogListLoading />}>
+                        {isLoading && <BlogListLoading />}
                         {posts.map((post: PostModel) => <Post post={post} />)}
                     </Suspense>
                 </div>
