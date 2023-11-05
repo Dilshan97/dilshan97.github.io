@@ -49,7 +49,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ project, direction }) => {
       <div className="flex flex-col gap-[16px] md:w-[400px] lg:w-[unset] md:gap-[32px]">
         <div className="flex flex-col gap-[8px] md:gap-[16px]">
           <h5 className="md:text-2xl text-3xl font-bold">{project.title}</h5>
-          <p className="text-base text-N-600 lg:w-[500px] leading-normal">{project.intro}</p>
+          <p className="text-base text-N-600 lg:w-[500px] leading-[2rem]">{project.intro}</p>
         </div>
         <div className="flex gap-[16px] flex-col md:flex-row">
           <a
@@ -69,6 +69,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ project, direction }) => {
             alt={project.title}
             width={500}
             height={500}
+            placeholder="blur"
           />
         </div>
       )}
