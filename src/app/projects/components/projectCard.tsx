@@ -4,20 +4,14 @@
  */
 "use client"
 import { motion } from 'framer-motion';
-import Image from 'next/image';
-import React, { FC, useState } from 'react';
-import { ProjectImageLoading } from '@/app/projects/components/ProjectsListLoading';
+import React, { FC } from 'react';
 import ProjectModel from '@/utils/models/project.model';
+import ProjectImage from './ProjectImage';
 interface ProjectCardProps {
   project: ProjectModel;
   direction: string;
 }
 const ProjectCard: FC<ProjectCardProps> = ({ project, direction }) => {
-
-  const [isLoaded, setLoaded] = useState<boolean>(false);
-
-  const onLoad = () => setLoaded(true);
-
   return (
     <motion.div
       variants={{
@@ -37,11 +31,9 @@ const ProjectCard: FC<ProjectCardProps> = ({ project, direction }) => {
 
       {direction == "left" && (
         <div className="flex pt-[24px] md:pt-0 md:pr-5">
-          <Image
-            src={project.image}
-            alt={project.title}
-            width={500}
-            height={500}
+          <ProjectImage
+            title={project.title}
+            image={project.image}
           />
         </div>
       )}
@@ -64,12 +56,9 @@ const ProjectCard: FC<ProjectCardProps> = ({ project, direction }) => {
 
       {direction == "right" && (
         <div className="flex pt-[24px] md:pt-0">
-          <Image
-            src={project.image}
-            alt={project.title}
-            width={500}
-            height={500}
-            placeholder="blur"
+          <ProjectImage
+            title={project.title}
+            image={project.image}
           />
         </div>
       )}
