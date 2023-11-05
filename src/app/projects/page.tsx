@@ -95,7 +95,12 @@ const Page: FC = () => {
           className="lg:pt-[60px] md:pt-[40px] pt-[24px] flex flex-col gap-[24px] md:gap-[40px]  aos-init aos-animate"
         >
           <Suspense fallback={<ProjectsListLoading />}>
-            {projects.map((project: ProjectModel) => <ProjectCard project={project} />)}
+            {projects.map((project: ProjectModel, key) =>
+              <ProjectCard
+                project={project}
+                direction={key % 2 == 0 ? "right" : "left"}
+              />
+            )}
           </Suspense>
         </motion.div>
       </div>
