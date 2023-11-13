@@ -186,7 +186,7 @@ const Privacy = () => {
                 <h2 className="text-2xl font-bold py-2">Contact Us</h2>
                 <p className="py-3">If you have any questions about this Privacy Policy, You can contact us:</p>
                 <ul className="list-disc ml-10 pb-10">
-                    <li className="py-3">By email: <a href="mailto:dilshanramesh81@gmail.com">dilshanramesh81@gmail.com</a></li>
+                    <li className="py-3">By email: <a href="mailto:dilshanramesh81@gmail.com" className="text-blue-600">dilshanramesh81@gmail.com</a></li>
                 </ul>
             </div>
         </div>
