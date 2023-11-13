@@ -71,7 +71,7 @@ const Page: FC = () => {
   ];
 
   return (
-    <div className="projects bg-slate-100	">
+    <div className="projects bg-slate-100">
       <div className="container mx-auto max-w-5xl">
         <div className="mx-2 max-sm:mx-5">
           <p className="text-4xl py-4 text-gray-600 max-sm:text-xl">Projects</p>
