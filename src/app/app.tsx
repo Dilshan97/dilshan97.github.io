@@ -3,30 +3,18 @@
  *   All rights reserved.
  */
 "use client"
-import React, { FC, useContext } from 'react';
+import React, { FC } from 'react';
 
 //components
 import Header from '@/components/common/header';
 import Footer from '@/components/common/footer';
 import { AnimatePresence, motion } from 'framer-motion';
-import MobileMenu from '@/components/common/mobileMenu';
-import { AppContext } from '@/context/BaseContext';
 interface AppProps {
     children: React.ReactNode;
 }
 const App: FC<AppProps> = ({ children }) => {
-    const { isMenuOpen } = useContext(AppContext);
     return (
         <AnimatePresence>
-            {/* {isMenuOpen ? (
-                <MobileMenu />
-            ) : (
-                <>
-                    <Header />
-                    {children}
-                    <Footer />
-                </>
-            )} */}
             <Header />
             <motion.div
                 initial={{ opacity: 0, y: 15 }}
