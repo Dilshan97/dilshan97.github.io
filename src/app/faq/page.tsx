@@ -10,13 +10,17 @@ import React, { FC } from 'react';
 const Page: FC = () => {
     return (
         <div className="faqs bg-slate-100">
-            <div className="container mx-auto max-w-4xl">
-                <h2 className="text-6xl text-center">
-                    A few things 🙄 <br />
-                    clients normally ask me:
-                </h2>
+            <div className="container mx-auto max-w-screen-lg">
+                <div className="flex flex-col">
+                    <h2 className="text-6xl text-center">
+                        A few things 🙄
+                    </h2>
+                    <h2 className="text-6xl text-center">
+                        clients normally ask me:
+                    </h2>
+                </div>
 
-                <motion.div className="grid grid-rows-3 grid-cols-2 max-sm:grid-cols-1 grid-flow-col gap-4 py-10">
+                <motion.div className="grid lg:grid-rows-3 lg:grid-cols-2 grid-cols-1 grid-flow-row gap-4 py-10">
                     <FaqItem
                         question={'What specific services do you provide?'}
                         answer={'I specialize in web/mobile app development & offer consulting for design & development.'}
@@ -29,7 +33,7 @@ const Page: FC = () => {
 
                     <FaqItem
                         question={'How much is the Minimum budget for a Project?'}
-                        answer={"It's based on the requirement. Normally, Minimum LKR 15K to LKR ∞"}
+                        answer={"It's based on the requirement. Normally, Minimum LKR 20K to LKR ∞"}
                     />
 
                     <FaqItem

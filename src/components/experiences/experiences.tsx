@@ -13,10 +13,10 @@ import { motion } from 'framer-motion';
 const Experiences: FC = () => {
     return (
         <div className="experiences bg-gray-100 py-20">
-            <div className="container mx-auto">
-                <div className="title mx-20">
-                    <p className="text-4xl py-4 text-gray-600">Experiences</p>
-                    <h2 className="text-7xl">
+            <div className="container max-w-screen-lg mx-auto">
+                <div className="title">
+                    <p className="text-3xl py-4 text-gray-600">Experiences</p>
+                    <h2 className="text-6xl">
                         Life's interactive adventures.
                     </h2>
                 </div>
@@ -33,13 +33,13 @@ const Experiences: FC = () => {
                     }}
                     initial="hidden"
                     animate="show"
-                    className="grid grid-cols-2 gap-4 py-10 mx-20">
+                    className="grid lg:grid-cols-2 grid-cols-1 gap-4 py-10">
                     <Company
                         title={'Senior Software Engineer'}
                         company={'Nova Solutions (Pvt) Ltd'}
                         type={'Full-time'}
                         duration={'Sep 2023 - Present'}
-                        skills={'E-Commerce · Agile Methodologies · Redux.js · React.js · Flutter'}
+                        skills={'React · Flutter · NodeJs · Typescript · Flutter · Agile Methodologies · Redux'}
                         logo={novaLogo}
                     />
 
@@ -52,7 +52,7 @@ const Experiences: FC = () => {
                         logo={novaLogo}
                     />
 
-                    <Company
+                    {/* <Company
                         title={'Software Engineer - PHP'}
                         company={'iLabs'}
                         type={'Full-time'}
@@ -68,7 +68,7 @@ const Experiences: FC = () => {
                         duration={'Aug 2019 - Feb 2020'}
                         skills={'Firebase · VueJs · Android · Java'}
                         logo={novaLogo}
-                    />
+                    /> */}
                 </motion.div>
             </div>
         </div>

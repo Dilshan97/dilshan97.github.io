@@ -33,7 +33,7 @@ const Header: FC = () => {
 
   return (
     <div className="nav h-full py-4 sticky top-0 border-b-2 border-gary-900 z-10">
-      <div className="container max-w-5xl flex items-center justify-between mx-auto sm:px-10">
+      <div className="container max-w-screen-lg flex items-center justify-between mx-auto sm:px-10">
         <div className="brand sm:w-1/5">
           <a href="/" title="Dilshan Ramesh" className="font-normal">
             Dilshan Ramesh

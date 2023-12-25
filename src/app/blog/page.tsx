@@ -61,7 +61,7 @@ const Page = () => {
 
     return (
         <div className="bg-white py-10">
-            <div className="container mx-auto max-w-5xl">
+            <div className="container mx-auto max-w-screen-lg">
                 <div className="mx-2 max-sm:mx-5">
                     <p className="text-4xl py-4 text-gray-600 max-sm:text-xl">
                         Blog
@@ -71,7 +71,7 @@ const Page = () => {
                     </h2>
                 </div>
 
-                <div className="grid grid-cols-2  gap-4 max-sm:px-4 max-sm:grid-cols-1 py-10">
+                <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 py-10">
                     <Suspense fallback={<BlogListLoading />}>
                         {isLoading && <BlogListLoading />}
                         {posts.map((post: PostModel) => <Post post={post} />)}

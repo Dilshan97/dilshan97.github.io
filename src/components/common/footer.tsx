@@ -8,7 +8,7 @@ import React, { FC } from 'react'
 const Footer: FC = () => {
   return (
     <div className="footer bg-white">
-      <div className="container max-w-4xl mx-auto">
+      <div className="container max-w-screen-lg mx-auto">
         <div className="divider"></div>
         <div className="credit flex justify-between py-5">
           <p className="text-sm">&copy; {new Date().getFullYear()} Dilshan Ramesh. All Rights Reserved.</p>

@@ -4,8 +4,8 @@
  */
 const Privacy = () => {
     return (
-        <div className="container max-w-5xl m-auto pt-10 ">
-            <div className="mx-2 max-sm:mx-5">
+        <div className="container max-w-screen-lg m-auto pt-10">
+            <div className="lg:mx-2 mx-5">
                 <h1 className="text-5xl">Privacy Policy</h1>
                 <p className="py-6">Last updated: November 02, 2023</p>
                 <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
