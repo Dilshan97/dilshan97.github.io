@@ -12,15 +12,15 @@ import mrchLogo from '@/assets/images/mrch-logo.jpeg';
 const Educations: FC = () => {
     return (
         <div className="educations bg-orange-50 py-24">
-            <div className="container mx-auto">
-                <div className="title mx-20">
-                    <p className="text-4xl py-4 text-gray-600">Education</p>
-                    <h2 className="text-7xl">
+            <div className="container max-w-screen-lg mx-auto">
+                <div className="title">
+                    <p className="text-3xl py-4 text-gray-600">Education</p>
+                    <h2 className="text-6xl">
                         The Path of Learning I've Taken
                     </h2>
                 </div>
 
-                <div className="grid grid-cols-2 gap-4 py-10 mx-20">
+                <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 py-10">
                     <Institute
                         title={'BSc (Hons) in Information Technology'}
                         institute={'Sri Lanka Institute of Information Technology (SLIIT) - Malabe, Sri Lanka'}

@@ -9,8 +9,8 @@ import { ArrowRight2 } from 'iconsax-react';
 const Cta: FC = () => {
     return (
         <div className="intro bg-slate-50">
-            <div className="container mx-auto text-center flex flex-col items-center">
-                <h2 className="text-7xl gradient-heading w-9/12">
+            <div className="container max-w-screen-lg mx-auto text-center flex flex-col items-center">
+                <h2 className="text-7xl gradient-heading">
                     What exciting projects or ideas do you have in mind?
                 </h2>
                 <a href="#" className="text-xl flex items-center justify-center text-blue-600">

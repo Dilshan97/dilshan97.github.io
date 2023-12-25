@@ -72,10 +72,10 @@ const Page: FC = () => {
 
   return (
     <div className="projects bg-slate-100">
-      <div className="container mx-auto max-w-5xl">
-        <div className="mx-2 max-sm:mx-5">
-          <p className="text-4xl py-4 text-gray-600 max-sm:text-xl">Projects</p>
-          <h2 className="text-6xl max-sm:text-4xl max-w-4xl">
+      <div className="container mx-auto max-w-screen-lg">
+        <div className="lg:mx-2 mx-5">
+          <p className="lg:text-4xl text-xl py-4 text-gray-600">Projects</p>
+          <h2 className="lg:text-6xl text-4xl max-w-4xl">
             The bit of work I do, and the business I help.
           </h2>
         </div>

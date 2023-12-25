@@ -9,15 +9,15 @@ import React, { FC } from 'react';
 const TechStack: FC = () => {
     return (
         <div className="tech-stack bg-white-100 py-28">
-            <div className="container mx-auto">
-                <div className="title mx-20">
-                    <p className="text-4xl py-4 text-gray-600">Tech Stack</p>
-                    <h2 className="text-7xl">
+            <div className="container max-w-screen-lg mx-auto">
+                <div className="title">
+                    <p className="text-3xl py-4 text-gray-600">Tech Stack</p>
+                    <h2 className="text-6xl">
                         A mix of the tech stack
                     </h2>
                 </div>
 
-                <div className="grid grid-cols-8 grid-flow-row gap-4 py-10 px-20">
+                <div className="grid grid-cols-8 grid-flow-row gap-4 py-10">
                     <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=laravel" alt="Laravel" />
                     <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=react" alt="React" />
                     <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=flutter" alt="Flutter" />
