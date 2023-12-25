@@ -24,6 +24,7 @@ const TechStack: FC = () => {
                     <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=ts" alt="TypeScript" />
                     <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=js" alt="JavaScript" />
                     <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=dart" alt="Dart" />
+                    <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=nodejs" alt="nodejs" />
                     <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=git" alt="Git" />
                     <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=androidstudio" alt="Android Studio" />
                     <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=redux" alt="Redux" />
@@ -41,7 +42,6 @@ const TechStack: FC = () => {
                     <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=nextjs" alt="Next Js" />
                     <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=php" alt="PHP" />
                     <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=postman" alt="Postman" />
-                    <Image className="w-9/12" width={500} height={500} src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind" />
                 </div>
             </div>
         </div>
