@@ -4,5 +4,5 @@
  *   Nova Solutions (Pvt) Ltd. All rights reserved.
  */
 export const constants = {
-    APP_URL: "https://dilshan97.github.io"
+    APP_URL: "https://dilshan97.vercel.app"
 };

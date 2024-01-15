@@ -1,9 +1,10 @@
 import App from './app';
 import React, { FC } from 'react';
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Poppins } from 'next/font/google';
 import '@/assets/styles/globals.css';
 import AppContextProvider from '@/context/BaseContext';
+import { constants } from '@/utils/constants';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
   applicationName: "Dilshan's Portfolio",
   openGraph: {
     type: 'profile',
-    url: 'https://dilshan97.github.io',
+    url: constants.APP_URL,
     title: 'Dilshan Ramesh | Official website',
     description: 'Explore the world of Dilshan Ramesh: a passionate developer, innovator, and creator. Discover a diverse range of projects, insights, and expertise in technology and beyond.',
     siteName: 'Dilshan Ramesh | Official website',
@@ -42,25 +43,21 @@ export const metadata: Metadata = {
   authors: [
     {
       name: 'Dilshan Ramesh',
-      url: 'https://dilshan97.github.io'
+      url: constants.APP_URL
     }
   ],
   alternates: {
-    canonical: "https://dilshan97.github.io"
+    canonical: constants.APP_URL
   },
   generator: "Next.js",
   referrer: "origin",
-  viewport: {
-    width: 'device-width',
-    initialScale: 1
-  },
   creator: 'Dilshan Ramesh',
   publisher: 'GitHub Pages',
   robots: {
     index: true,
     follow: true,
   },
-  metadataBase: new URL("https://dilshan97.github.io")
+  metadataBase: new URL(constants.APP_URL)
 }
 interface RootLayoutProps {
   children: React.ReactNode;
